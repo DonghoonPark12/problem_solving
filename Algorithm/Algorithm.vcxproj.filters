@@ -21,14 +21,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Polyomino.cpp">
-      <Filter>소스 파일\Jongman</Filter>
-    </ClCompile>
     <ClCompile Include="c_Ex.cpp">
       <Filter>소스 파일\C</Filter>
-    </ClCompile>
-    <ClCompile Include="Wildgame.cpp">
-      <Filter>소스 파일\Jongman</Filter>
     </ClCompile>
     <ClCompile Include="memset.cpp">
       <Filter>리소스 파일</Filter>
@@ -48,9 +42,6 @@
     <ClCompile Include="SWEA\sw_2105.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="SWEA\sw_2105_sol.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="SWEA\sw_2805.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -60,14 +51,20 @@
     <ClCompile Include="SWEA\sw_5648.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="SWEA\sw_5648_sol.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="SWEA\sw_basic.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="SWEA\sw2105.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWEA\sw_1206.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Algospot\Wildgame.cpp">
+      <Filter>소스 파일\Jongman</Filter>
+    </ClCompile>
+    <ClCompile Include="Algospot\Polyomino.cpp">
+      <Filter>소스 파일\Jongman</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

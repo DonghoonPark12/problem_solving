@@ -1,18 +1,31 @@
-
 #define	_CRT_SECURE_NO_WARNINGS
+#include <vector>
 #include <iostream>
 using namespace std;
-
+int _max(int a, int b, int c, int d) {
+	int L = a > b ? a : b;
+	int R = c > d ? c : d;
+	return L > R ? L : R;
+}
 int main(void)
 {
 	int T, test_case;
-	int Answer = 0;
 	freopen("input.txt", "r", stdin);
 	setbuf(stdout, NULL);
 
-	scanf("%d", &T);
-	for (test_case = 0; test_case < T; test_case++)
+	//scanf("%d", &T);
+	for (test_case = 0; test_case < 10; test_case++)
 	{
+		int len; cin >> len;
+		vector<int> arr(len, 0);
+		for (int i = 0; i < len; i++) {
+			cin >> arr[i];
+		}
+		int Answer = 0;
+		for (int i = 2; i < len - 2; i++) {
+			if (arr[i] > arr[i + 1] && arr[i] > arr[i + 2] && arr[i] > arr[i - 1] && arr[i] > arr[i - 2])
+				Answer += arr[i] - _max(arr[i - 1], arr[i - 2], arr[i + 1], arr[i + 2]);
+		}
 
 
 		printf("#%d ", test_case + 1);
