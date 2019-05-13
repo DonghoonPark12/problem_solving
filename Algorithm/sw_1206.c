@@ -1,3 +1,28 @@
+
+#define	_CRT_SECURE_NO_WARNINGS
+#include <iostream>
+using namespace std;
+
+int main(void)
+{
+	int T, test_case;
+	int Answer = 0;
+	freopen("input.txt", "r", stdin);
+	setbuf(stdout, NULL);
+
+	scanf("%d", &T);
+	for (test_case = 0; test_case < T; test_case++)
+	{
+
+
+		printf("#%d ", test_case + 1);
+		printf("%d\n", Answer);
+	}
+
+	return 0;
+
+}
+
 //#define	_CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
 //#define max(a,b) (((a)>(b)) ? (a):(b))
