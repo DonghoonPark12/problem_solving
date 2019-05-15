@@ -1,3 +1,34 @@
+#include <cstdio>
+using namespace std;
+
+int main()
+{
+	freopen("input.txt", "r", stdin);
+	setbuf(stdout, NULL);
+	int t, num[8], k;
+	for (int tc = 1; tc <= 10; ++tc) {
+		scanf("%d", &t);
+		for (int i = 0; i<8; ++i) scanf("%d", num + i);
+
+		k = 0;
+		while (true) {
+			num[k % 8] -= k % 5 + 1;
+			if (num[k % 8] <= 0) break;
+			k++;
+		}
+		/*
+		배열 원소에 돌아가면서 1~5의 값을 빼준다. -= k%5 + 1
+		원소는 idx가 8보다 크면 안된다. num[k%8]
+		*/
+		num[k % 8] = 0;
+		printf("#%d", tc);
+		for (int i = 1; i <= 8; ++i) 
+			printf(" %d", num[(k + i) % 8]);
+		printf("\n");
+	}
+}
+
+//리스트로 풀기
 #include <cstdio> 
 /*
 1,2. 문제 이해, 재정의
@@ -40,8 +71,8 @@ int main() {
 			head->next->data -= loss;
 			head->next = head->next->next;//노드 제거
 
-			//tail = tail->next; //포인터를 이동시킨 다음에
-			//tail = new Node; //New 노드를 만들면 안된다.
+										  //tail = tail->next; //포인터를 이동시킨 다음에
+										  //tail = new Node; //New 노드를 만들면 안된다.
 			tail->next = new Node;//먼저 노드를 생성하고
 			tail = tail->next;//포인터를 이동한다. 
 

@@ -54,7 +54,7 @@ int main()
 		scanf("%d", &number);
 		if (number < 0) break;
 		scanf("%s %f", name, &score);//이름, 점수 저장
-		fprintf(fp, "%d %s %f\n", number, name, score); // 이건 뭘까
+		fprintf(fp, "%d %s %f\n", number, name, score); 
 		// 출력의 대상이 화면이 아닌, 파일!!!
 		// 문자열로 변환된 후 파일에 쓰인다.
 	}

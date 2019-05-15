@@ -41,6 +41,40 @@ int main()
 	return 0;
 }
 
+/*
+void swap(int *p, int *q)
+{
+int tmp = *p;
+*p = *q;
+*q = tmp;
+}
 
+int partition(int s[], int low, int high)
+{
+int j = low, pivotpoint;
+int pivotitem = s[low];
+for (int i = low + 1; i <= high; i++)
+{
+if (s[i] > pivotitem)
+{
+j++;
+swap(&s[i], &s[j]);
+}
+}
+pivotpoint = j;
+swap(&s[low], &s[pivotpoint]);
+return pivotpoint;
+}
+
+void quicksort(int arr[], int low, int high)
+{
+int pivot = partition(arr, low, high);
+if (high > low)
+{
+quicksort(arr, low, pivot - 1);
+quicksort(arr, pivot + 1, high);
+}
+}
+*/
 
 //최빈수가 여러개일 경우 가장 큰 점수 출력
