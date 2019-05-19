@@ -63,6 +63,7 @@ using namespace std;
 /*
     프로그램을 종료시키는 것을 판단하게 하기 위해서는 visited 배열이 필요하며,
     x, y, 메모리, 방향 정보를 visited 배열이 방문 여부를 판단하는데 사용해야 한다.
+    https://hibee.tistory.com/290
 */
 struct node{
     int x, y, mem, dir;
