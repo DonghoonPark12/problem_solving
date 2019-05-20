@@ -1,40 +1,87 @@
 #define	_CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
+#include <iostream>
+#include <vector>
+using namespace std;
 /*
     4면 2^4 - 1: 1개 이상을 선택하야 하니까.
 */
+//vector<int> arr(21, 0);
+//int n, k; 
+//int brute_force() {
+//	int cnt= 0;
+//	for (int i = 1; i < (1<<n); i++) { //1 ~ 15 까지 
+//		int sum = 0;
+//		for (int j = 0; j < n; j++) {
+//			if (i & (1 << j))//0001 ~ 1111 을 확인 
+//				sum += arr[j];
+//			if (sum > k) break;
+//		}
+//		if (sum == k) cnt++;
+//	}
+//	return cnt;
+//}
+//
+//int main() {
+//	freopen("input.txt", "r", stdin);
+//
+//	int Ans;
+//	int tc;
+//	scanf("%d", &tc);
+//	for (int t = 0; t < tc; t++) {
+//		cin >> n >> k;
+//
+//		for (int i = 0; i < n; i++) { cin >> arr[i]; }//1 2 1 2
+//		Ans = brute_force();
+//		cout << "#" << t << " " << Ans << "\n";
+//	}
+//	return 0;
+//}
 
-int arr[21];
+//https://ddoublej.tistory.com/166
+//https://2youngjae.tistory.com/79
+//https://hibee.tistory.com/154
 
-int main() {
-	freopen("input.txt", "r", stdin);
-	setbuf(stdout, NULL);
+int T, n, k, total, cnt;
+int a[20];
 
-	int tc;
-	scanf("%d", &tc);
-	for (int t = 0; t < tc; t++) {
-		int Ans = 0;
-		int n, k; scanf(" %d %d", &n, &k);
 
-		for (int i = 0; i < n; i++) { scanf(" %d", arr + i); }//1 2 1 2
-		
-		for (int i = 1; i < (1<<n); i++) { //1 ~ 15 까지 
-			int sum = 0;
-			for (int j = 0; j < n; j++) {
-				if (i & (1 << j))//0001 ~ 1111 을 확인 
-					sum += arr[j];
-			}
-			if (sum == k)
-				Ans++;
-		}
+//백트래킹
+void dfs(int v, int total) {
+	total += a[v];
 
-		for (int j = 0; j < n; j++) { //배열 초기화
-			arr[j] = 0;
-		}
-		printf("#%d %d\n", t + 1, Ans);
+	if (total == k) {
+		cnt++;
 	}
-}
+	else if (total > k) {
 
+	}
+	else {
+		for (int i = v + 1; i < n; i++) {
+			dfs(i, total);
+		}
+	}
+
+	total -= a[v];
+}
+int main() {
+
+	cin >> T;
+	for (int tc = 1; tc <= T; tc++) {
+
+		cnt = 0;
+
+		cin >> n >> k;
+		for (int i = 0; i < n; i++) { cin>>a[i]; }
+
+		for (int i = 0; i < n; i++) {
+			total = 0;
+			dfs(i, 0);
+		}
+
+		printf("#%d %d\n", tc, cnt);
+	}
+
+}
 
 
 

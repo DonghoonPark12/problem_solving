@@ -1,6 +1,6 @@
 /* 
 O(V+E)
-DFS에서 발전한 기법이 BackTracking ??
+DFS에서 발전한 기법이 BackTracking
 재귀 함수를 통해 구현되는 경우가 많다. 
 */
 

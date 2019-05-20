@@ -24,8 +24,7 @@ void Graph::addEdge(int v, int w)
 
 void Graph::BFS(int s) {
 	bool *visited = new bool[V];//정점의 수 만큼 배열 동적 할당
-	for (int i = 0; i < V; i++)
-		visited[i] = false;
+	memset(visited, false, sizeof(visited));
 	
 	//Create a queue for BFS
 	list<int> queue;
@@ -73,3 +72,11 @@ int main()
 
 	return 0;
 }
+
+/*
+하지만 하노이의 탑과 같은 알고리즘이 등장하면 숨이 막히기 시작한다.
+꼬리재귀(tail recursion)가 왜 효율적인지, 일반적인 재귀 알고리즘을 어떻게 꼬리재귀 알고리즘으로 변환할 수 있는지 등을
+이야기하다보면 한계를 느낀다.이런 사람들은 개발자가 되어서 실전에 배치되어도
+운영체제의 루프백(loopback) 주소라는 개념을 이해하지 못해서 애를 먹는다.재귀라는 알고리즘의 작동방식이 머릿속에서 그려지지 않는 탓이다.
+출처: 누워서 읽는 프로그래밍
+*/

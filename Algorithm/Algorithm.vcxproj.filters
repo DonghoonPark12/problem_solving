@@ -72,6 +72,18 @@
     <ClCompile Include="SWEA\sw_1824.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="DS\bfs_graph.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DS\bfs_tree.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWEA\sw_2112.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWEA\sw_2817.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
@@ -79,8 +91,6 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <None Include="txt1.bin">
-      <Filter>리소스 파일</Filter>
-    </None>
+    <None Include="DS\bfs_tree.py" />
   </ItemGroup>
 </Project>
