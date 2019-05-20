@@ -69,10 +69,18 @@
     <ClCompile Include="SWEA\sw_1954.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="SWEA\sw_1824.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
       <Filter>리소스 파일</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="txt1.bin">
+      <Filter>리소스 파일</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -1,8 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <queue>
-#include <algorithm>
-using namespace std;
+
 // int mem;
 // void mem_plus(){
 //     if (mem == 15) mem = 0;
@@ -65,6 +61,12 @@ using namespace std;
     x, y, 메모리, 방향 정보를 visited 배열이 방문 여부를 판단하는데 사용해야 한다.
     https://hibee.tistory.com/290
 */
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <cstring>
+#include <string>
+using namespace std;
 struct node{
     int x, y, mem, dir;
     node(int _x, int _y, int _mem, int _dir)
@@ -73,9 +75,9 @@ struct node{
 };
 int r,c;
 bool visited[21][21][16][4];
-int dx[4] = {1, -1, 0, 0};
-int dy[4] = {0, 0, 1, -1};
-vector<vector<int> > arr(21, vector<int>(21));
+int dx[4] = {0, 0, 1, -1};
+int dy[4] = {1, -1, 0, 0};
+vector<vector<char> > arr(21, vector<char>(21));
 
 bool bfs(){
     queue<node> q;
@@ -89,24 +91,24 @@ bool bfs(){
         int dir = q.front().dir;
         q.pop();
 
-        if(arr[y][x]<10 && arr[y][x]>=0){ mem = arr[y][x]; x++; }
-        else if(arr[y][x] == '>'){dir = 0;}
-        else if(arr[y][x] == '<'){dir = 1;}
-        else if(arr[y][x] == 'v'){dir = 2;}
-        else if(arr[y][x] == '^'){dir = 3;}
-        else if(arr[y][x] == '_'){dir = mem == 0? 0 : 1;}
-        else if(arr[y][x] == '|'){dir = mem == 0? 2 : 3;}
-        else if(arr[y][x] == '+'){mem = mem==15 ? 0:mem + 1;}
-        else if(arr[y][x] == '-'){mem = mem==0 ? 15:mem - 1;}
-        else if(arr[y][x] == '@') return true;
-        else if(arr[y][x] == '?'){
+        if(arr[x][y]<='9' && arr[x][y]>='0'){ mem = arr[x][y] - '0';}
+        else if(arr[x][y] == '>'){dir = 0;}
+        else if(arr[x][y] == '<'){dir = 1;}
+        else if(arr[x][y] == 'v'){dir = 2;}
+        else if(arr[x][y] == '^'){dir = 3;}
+        else if(arr[x][y] == '_'){dir = mem == 0? 0 : 1;}
+        else if(arr[x][y] == '|'){dir = mem == 0? 2 : 3;}
+        else if(arr[x][y] == '+'){mem = mem==15 ? 0:mem + 1;}
+        else if(arr[x][y] == '-'){mem = mem==0 ? 15:mem - 1;}
+        else if(arr[x][y] == '@') return true;
+        else if(arr[x][y] == '?'){
             for(int i=0;i<4;i++){
                 int nx = x + dx[i];
                 int ny = y + dy[i];
-                if(nx == -1) nx = c-1;
-                else if(nx == c) nx = 0;
-                if(ny == -1) ny = r-1;
-                else if(ny == r) ny = 0;
+                if(nx == -1) nx = r-1;
+                else if(nx == r) nx = 0;
+                if(ny == -1) ny = c-1;
+                else if(ny == c) ny = 0;
 
                 if(!visited[nx][ny][mem][i]){
                     q.push(node(nx, ny, mem, i));
@@ -116,10 +118,10 @@ bool bfs(){
         }
         int nx = x + dx[dir];
         int ny = y + dy[dir];
-        if(nx == -1) nx = c-1;
-        else if(nx == c) nx = 0;
-        if(ny == -1) ny = r-1;
-        else if(ny == r) ny = 0;
+        if(nx == -1) nx = r-1;
+        else if(nx == r) nx = 0;
+        if(ny == -1) ny = c-1;
+        else if(ny == c) ny = 0;
 
         if(!visited[nx][ny][mem][dir]){
             q.push(node(nx, ny, mem, dir));
@@ -130,18 +132,22 @@ bool bfs(){
 }
 
 int main(){
+	// cin,cout 속도향상
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL); cout.tie(NULL);
+
     freopen("input.txt", "r", stdin);
     int T;
     string Answer;
-    for(int tc; tc<T;tc++){
-        cin>>T;
+    cin>>T;
+    for(int tc =0; tc<T;tc++){
         cin>>r>>c;
         for(int i=0;i<r;i++){
             for(int j=0;j<c;j++){
                 cin>>arr[i][j];
             }
         }  
-        memset(visited, -1, sizeof(visited));
+        memset(visited, false, sizeof(visited));
         Answer = bfs() ? "YES" : "NO";
         cout<<"#"<<tc+1<<" "<<Answer<<endl; 
     }
