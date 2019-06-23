@@ -1,3 +1,4 @@
+//DFS와 BFS
 #include <iostream>
 #include <list>
 using namespace std;
@@ -11,7 +12,6 @@ public:
 
 	void DFSUtils(int v, bool visited[]);
 	void DFS(int v);
-
 	void BFS(int v);
 };
 
@@ -52,19 +52,19 @@ void Graph::BFS(int s) {
 		visited[i] = false;
 
 	//Create a queue for BFS
-	list<int> queue;
+	queue<int> q;
 
 	// Mark the current node as visited and enqueue it
 	visited[s] = true;
-	queue.push_back(s);
+	q.push(s);
 
 	//'i' will be used to get all adjacent
 	list<int>::iterator it;
 
-	while (!queue.empty()) {
-		s = queue.front();
+	while (!q.empty()) {
+		s = q.front();
 		cout << s << " ";
-		queue.pop_front();
+		q.pop();
 
 		//Get all the adjacent vertices of the dequeued vertex s.
 		//If adjacent has not been visited, then mark it visited and enqueue it.
@@ -73,10 +73,9 @@ void Graph::BFS(int s) {
 			if (!visited[*it])
 			{
 				visited[*it] = true;
-				queue.push_back(*it);
+				q.push(*it);
 			}
 		}
-		//sort 해야 한다.
 	}
 }
 
@@ -97,5 +96,54 @@ int main() {
 	g.DFS(start);
 	cout << "\n";
 	g.BFS(start);
+	return 0;
+}
+
+
+#include <iostream>
+#include <queue>
+#include <vector>
+
+using namespace std;
+bool visited[1001];
+void dfs(int s, vector<vector<int>>m) {
+	visited[s] = true;
+	cout << s << " ";
+	for (int i = 1; i<m.size(); i++) {
+		if (visited[i] == false && m[s][i] == 1) {
+			dfs(i, m);
+		}
+	}
+}
+int main()
+{
+	int v, e, s;
+	freopen("input.txt", "r", stdin);
+	cin >> v >> e >> s;
+	vector<vector<int>>matrix(v+1, vector<int>(v+1));
+	int v1, v2;
+	for (int i = 0; i <e; i++) {
+		cin >> v1 >> v2;
+		matrix[v1][v2]=1;
+		matrix[v2][v1]=1; 
+	}
+	dfs(s, matrix);
+	memset(visited, false, sizeof(visited));
+	cout << endl;
+
+	queue<int>q;
+	q.push(s);
+	visited[s] = true;
+	while (!q.empty()) {
+		int front = q.front();
+		cout << front << " ";
+		q.pop();
+		for (int i = 1; i<v+1; i++) {
+			if (visited[i] == false && matrix[front][i] == 1) {
+				q.push(i);
+				visited[i] = true;
+			}
+		}
+	}
 	return 0;
 }
