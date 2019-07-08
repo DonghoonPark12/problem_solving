@@ -3,7 +3,13 @@
 #include <tuple>
 #include <set>
 #include <map>
+#include <algorithm>
 using namespace std;
+/*
+	STL 정리 - https://baactree.tistory.com/29
+
+*/
+typedef pair<int, string> pis;
 
 void print(set<int> &s, set<int>::iterator it) {
 	if (it == s.end()) {
@@ -15,45 +21,33 @@ void print(set<int> &s, set<int>::iterator it) {
 }
 
 int main() {
-	pair<int, int> p1;
-	cout << p1.first << ' ' << p1.second << '\n';
+	/*---------------------------- vector --------------------------*/
+	
+	vector<pis> v;
 
-	p1 = make_pair(10, 20);
-	cout << p1.first << ' ' << p1.second << '\n';
+	v.push_back(pis(3, "Dok2"));
+	v.push_back(pis(6, "DMask"));
+	v.push_back(pis(1, "Tiger JK"));
+	v.push_back(pis(2, "Banana"));
+	v.push_back(pis(2, "Apple"));
 
-	p1 = pair<int, int>(30, 40);
-	cout << p1.first << ' ' << p1.second << '\n';
+	cout << "===== Before Sort =====" << endl;
 
-	pair<int, int> p2(50, 60);
-	cout << p2.first << ' ' << p2.second << '\n';
+	vector<pis>::iterator iter;
+	for (iter = v.begin(); iter != v.end(); iter++) {
+		cout << "[" << iter->first << "," << iter->second << "]" << endl;
+	}
+	cout << endl;
 
-	pair<pair<int, int>, pair<int, int>> p = make_pair(make_pair(10, 20), make_pair(30, 40)); //pair의 원소를 pair로 한 경우 
+	sort(v.begin(), v.end());
+	cout << "===== After Sort =====" << endl;
+	for (iter = v.begin(); iter != v.end(); iter++) {
+		cout << "[" << iter->first << "," << iter->second << "]" << endl;
+	}
 
-	cout << p.first.first << ' ' << p.first.second << '\n';
-	cout << p.second.first << ' ' << p.second.second << '\n';
+	// vec7은 vec1의 두 번재 원소부터 마지막 원소까지 복사하여 생성.
+	vector<int> vec7 = vector<int>(vec1.begin() + 2, vec1.end());
 
-	tuple<int, int, int> t1 = make_tuple(1, 2, 3);
-	cout << get<0>(t1) << ' ';//get< > 사이에 변수를 넣을 수 없다. 
-	cout << get<1>(t1) << ' ';
-	cout << get<2>(t1) << '\n';
-
-	auto t = make_tuple(10, 20, 30);
-
-	int x = get<0>(t);
-	int y = get<1>(t);
-	int z = get<2>(t);
-
-	cout << x << ' ' << y << ' ' << z << '\n';
-
-	x = y = z = 0;
-	tie(x, y, z) = t;
-
-	cout << x << ' ' << y << ' ' << z << '\n';
-
-	//int a, b;
-	//tie(a, b, ignore) = make_tuple(10, 20, 30);
-
-	//cout << a << ' ' << b << '\n';
 
 	//vector<int> v1;
 	//vector<int> v2(10); //int v2[10];
@@ -71,7 +65,6 @@ int main() {
 
 	//a.push_back(6);
 	//a.push_back(7);
-
 	//a.pop_back();
 	//a.pop_back();
 	//a.pop_back();
@@ -122,6 +115,52 @@ int main() {
 	//for (auto it = a.begin(); it != a.end(); ++it) {
 	//	cout << "a[" << (it - a.begin()) << "]= " << *it << '\n';
 	//}
+	/*---------------------------------------------------------------*/
+
+	/*------------------------------ pair ----------------------------*/
+	pair<int, int> p1;
+	cout << p1.first << ' ' << p1.second << '\n';
+
+	p1 = make_pair(10, 20);
+	cout << p1.first << ' ' << p1.second << '\n';
+
+	p1 = pair<int, int>(30, 40);
+	cout << p1.first << ' ' << p1.second << '\n';
+
+	pair<int, int> p2(50, 60);
+	cout << p2.first << ' ' << p2.second << '\n';
+
+	pair<pair<int, int>, pair<int, int>> p = make_pair(make_pair(10, 20), make_pair(30, 40)); //pair의 원소를 pair로 한 경우 
+
+	cout << p.first.first << ' ' << p.first.second << '\n';
+	cout << p.second.first << ' ' << p.second.second << '\n';
+
+	/*---------------------------------------------------------------*/
+
+	tuple<int, int, int> t1 = make_tuple(1, 2, 3);
+	cout << get<0>(t1) << ' ';//get< > 사이에 변수를 넣을 수 없다. 
+	cout << get<1>(t1) << ' ';
+	cout << get<2>(t1) << '\n';
+
+	auto t = make_tuple(10, 20, 30);
+
+	int x = get<0>(t);
+	int y = get<1>(t);
+	int z = get<2>(t);
+
+	cout << x << ' ' << y << ' ' << z << '\n';
+
+	x = y = z = 0;
+	tie(x, y, z) = t;
+
+	cout << x << ' ' << y << ' ' << z << '\n';
+
+	//int a, b;
+	//tie(a, b, ignore) = make_tuple(10, 20, 30);
+
+	//cout << a << ' ' << b << '\n';
+
+
 
 	//set<int> s;
 	//s.insert(1); s.insert(3); s.insert(2);
@@ -230,7 +269,9 @@ int main() {
 	//	cout << p.first << ' ' << p.second << '\n';
 	//}
 
-
+	/*------------------------------ set ----------------------------*/
+	// 균형 잡힌 이진 트리이다.
+	// 원소 삽입, 삭제, 탐색 등 연산은 O(logn)을 보장한다. 
 	set<int> s;
 	pair<set<int>::iterator, bool> pr;
 	pr = s.insert(50);
@@ -242,5 +283,24 @@ int main() {
 	else
 		cout << *pr.first << "Failure!" << endl;
 	return 0;
+	/*---------------------------------------------------------------*/
 
+	/*------------------------------ map ----------------------------*/
+	// int 자료형을 key로 int 자료형을 데이터로 저장하는 딕셔너리 자료구조 생성
+	map<int, int> m;
+	m.insert(make_pair(4, 5));
+	m[5] = 6;
+
+	//key와 연관된 원소를 pair<key 자료형, data 자료형> 형태로 리턴함
+	printf("%d\n", m.find(4)->second);
+	
+	// key와 연관된 원소의 개수를 리턴함.
+	printf("%d\n", m.count(4));
+
+	//해당 주소의 원소 삭제
+	m.erase(++m.begin());
+	//모든 원소 삭제
+	m.clear();
+
+	/*---------------------------------------------------------------*/
 }

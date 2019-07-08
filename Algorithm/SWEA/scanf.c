@@ -1,6 +1,10 @@
 #define	_CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-
+//scanf의 리턴값: 성공적으로 입력 받은 인자 갯수
+//따라서, 파일 끝까지 입력 받아야 하는 경우에는 
+//while(scanf("%d %d", &a, &b) == 2)와 같이 사용할 수 있다.
+//scanf는 공백과 줄바꿈은 무시한다. 
+//%c 입력 받는건 주의. 공백, 줄바꿈도 문자.
 
 int main()
 {
