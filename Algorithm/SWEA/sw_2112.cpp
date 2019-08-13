@@ -3,22 +3,22 @@
 
 using namespace std;
 
-#define MAX_D 14
-#define MAX_W 21
-#define MAX_INF 987654321
+#define _max_D 14
+#define _max_W 21
+#define _max_INF 987654321
 
 int T;
 int d, w, k;
-int film[MAX_D][MAX_W];
-int check[MAX_D][MAX_W];
-int now_film[MAX_D][MAX_W];
-int ans = MAX_INF;
+int film[_max_D][_max_W];
+int check[_max_D][_max_W];
+int now_film[_max_D][_max_W];
+int ans = _max_INF;
 
 void Initialize()
 {
-	for (int i = 0; i < MAX_D; i++)
+	for (int i = 0; i < _max_D; i++)
 	{
-		for (int j = 0; j < MAX_W; j++)
+		for (int j = 0; j < _max_W; j++)
 		{
 			film[i][j] = 0;
 			now_film[i][j] = 0;
@@ -90,7 +90,7 @@ int main()
 			}
 		}
 
-		ans = MAX_INF;
+		ans = _max_INF;
 
 		Dfs(1, 0, 0);
 
@@ -152,3 +152,11 @@ int main()
 //
 //	}
 //}
+
+/*
+https://wjdgus2951.tistory.com/92
+https://flack3r.tistory.com/entry/sw-expert%EB%AA%A8%EC%9D%98sw%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%B3%B4%ED%98%B8%ED%95%84%EB%A6%84
+https://jongnan.tistory.com/entry/SW-Expert-2112-%EB%B3%B4%ED%98%B8-%ED%95%84%EB%A6%84
+http://blog.naver.com/PostView.nhn?blogId=1ilsang&logNo=221349369691&categoryNo=50&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView&userTopListOpen=true&userTopListCount=5&userTopListManageOpen=false&userTopListCurrentPage=1
+https://yobs0814.github.io/2018-10-20/SWEA2112
+*/

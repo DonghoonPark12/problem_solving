@@ -1,8 +1,11 @@
 #include <iostream>
+#include <cstdio>
 #include <vector>
+#include <queue>
 #include <tuple>
 #include <set>
 #include <map>
+#include <cstring>
 #include <algorithm>
 using namespace std;
 /*
@@ -20,47 +23,31 @@ void print(set<int> &s, set<int>::iterator it) {
 	}
 }
 
+class Student{
+public:
+	string name;
+	int score;
+	Student(string name, int score) {
+		this->name = name;
+		this->score = score;
+	}
+	
+	bool operator <(Student &stu) {
+		return this->score < stu.score;
+	}
+};
+
 int main() {
 	/*---------------------------- vector --------------------------*/
 	
-	vector<pis> v;
+	// 1) push_back, pop_back, resize, clear, size, empty
+	//vector<pis> v;
 
-	v.push_back(pis(3, "Dok2"));
-	v.push_back(pis(6, "DMask"));
-	v.push_back(pis(1, "Tiger JK"));
-	v.push_back(pis(2, "Banana"));
-	v.push_back(pis(2, "Apple"));
-
-	cout << "===== Before Sort =====" << endl;
-
-	vector<pis>::iterator iter;
-	for (iter = v.begin(); iter != v.end(); iter++) {
-		cout << "[" << iter->first << "," << iter->second << "]" << endl;
-	}
-	cout << endl;
-
-	sort(v.begin(), v.end());
-	cout << "===== After Sort =====" << endl;
-	for (iter = v.begin(); iter != v.end(); iter++) {
-		cout << "[" << iter->first << "," << iter->second << "]" << endl;
-	}
-
-	// vec7은 vec1의 두 번재 원소부터 마지막 원소까지 복사하여 생성.
-	vector<int> vec7 = vector<int>(vec1.begin() + 2, vec1.end());
-
-
-	//vector<int> v1;
-	//vector<int> v2(10); //int v2[10];
-	//vector<int> v3(15, 1); //길이가 15, 초기값 1
-	//vector<int> v4 = { 1, 2, 3, 4, 5 };
-
-	//vector<pair<int, int>> v5;
-	//vector<pair<int, int>> v6 = { {1, 2}, {3, 4} };
-	//vector<vector<int>> v7;
-
-	//int n = 10, m = 20;
-	//vector<vector<int>> v8(n, vector<int>(m)); // int v8[n][m]
-
+	//v.push_back(pis(3, "Dok2"));
+	//v.push_back(pis(6, "DMask"));
+	//v.push_back(pis(1, "Tiger JK"));
+	//v.push_back(pis(2, "Banana"));
+	//v.push_back(pis(2, "Apple"));
 	//vector<int> a = { 1, 2, 3, 4, 5 };
 
 	//a.push_back(6);
@@ -108,6 +95,20 @@ int main() {
 	//}
 	//cout << '\n'; //1 2 3 4
 
+
+	// 2) iterator & sort
+	//vector<pis>::iterator iter;
+	//for (iter = v.begin(); iter != v.end(); iter++) {
+	//	cout << "[" << iter->first << "," << iter->second << "]" << endl;
+	//}
+	//cout << endl;
+
+	//sort(v.begin(), v.end());
+	//cout << "===== After Sort =====" << endl;
+	//for (iter = v.begin(); iter != v.end(); iter++) {
+	//	cout << "[" << iter->first << "," << iter->second << "]" << endl;
+	//}
+
 	//for (vector<int>::iterator it = a.begin(); it != a.end(); it++) {
 	//	cout << *it << ' ';
 	//}
@@ -115,6 +116,58 @@ int main() {
 	//for (auto it = a.begin(); it != a.end(); ++it) {
 	//	cout << "a[" << (it - a.begin()) << "]= " << *it << '\n';
 	//}
+
+
+	// 3) Copy
+	//// vec7은 vec1의 두 번재 원소부터 마지막 원소까지 복사하여 생성.
+	//vector<int> vec7 = vector<int>(vec1.begin() + 2, vec1.end());
+
+
+	// 4) Initilization
+	//vector<int> v1;
+	//vector<int> v2(10); //int v2[10];
+	//vector<int> v3(15, 1); //길이가 15, 초기값 1
+	//vector<int> v4 = { 1, 2, 3, 4, 5 };
+
+
+	// 5) pair as element
+	//vector<pair<int, int>> v5;
+	//vector<pair<int, int>> v6 = { {1, 2}, {3, 4} };
+	//vector<vector<int>> v7;
+
+
+	// 6) 2D vector
+	//int n = 10, m = 20;
+	//vector<vector<int>> v8(n, vector<int>(m)); // int v8[n][m]
+
+
+	// 7) find
+	vector<int> a = { 1, 4, 1, 2, 4, 2, 4, 2, 3, 4, 4 };
+
+	for (int i = 0; i < 5; i++) {
+		auto it = find(a.begin(), a.end(), i);
+		cout << i << "의 위치: ";
+		if (it == a.end())
+			cout << "Cannot find" << " " << i;
+		else
+			cout << it - a.begin(); //★위치를 찾은 때는 이런 식으로!! 이때 첫번째 인덱스는 0으로 친다.
+		cout << '\n';
+	}
+
+	vector<int> vec = { 10, 20, 30, 40 };
+	vector<int>::iterator it;
+	
+
+	it = find(vec.begin(), vec.end(), 30);
+	//혹은 auto it = fine(vec.begin(), vec.enc(), 30);
+	if (it == vec.end())
+		cout << "Cannot find" << '\n';
+	else
+		cout << "Can find" << '\n';
+
+	
+
+
 	/*---------------------------------------------------------------*/
 
 	/*------------------------------ pair ----------------------------*/
@@ -137,6 +190,7 @@ int main() {
 
 	/*---------------------------------------------------------------*/
 
+	/*---------------------------- tuple ----------------------------*/
 	tuple<int, int, int> t1 = make_tuple(1, 2, 3);
 	cout << get<0>(t1) << ' ';//get< > 사이에 변수를 넣을 수 없다. 
 	cout << get<1>(t1) << ' ';
@@ -159,7 +213,6 @@ int main() {
 	//tie(a, b, ignore) = make_tuple(10, 20, 30);
 
 	//cout << a << ' ' << b << '\n';
-
 
 
 	//set<int> s;
@@ -282,13 +335,20 @@ int main() {
 		cout << *pr.first << "Success!" << endl;
 	else
 		cout << *pr.first << "Failure!" << endl;
-	return 0;
+
+	if (s.find(30) != s.end()) 
+		cout << "Exist!" << endl;
+	else
+		cout << "Not exist" << endl;
+	
 	/*---------------------------------------------------------------*/
 
 	/*------------------------------ map ----------------------------*/
 	// int 자료형을 key로 int 자료형을 데이터로 저장하는 딕셔너리 자료구조 생성
 	map<int, int> m;
+
 	m.insert(make_pair(4, 5));
+	//or
 	m[5] = 6;
 
 	//key와 연관된 원소를 pair<key 자료형, data 자료형> 형태로 리턴함
@@ -301,6 +361,105 @@ int main() {
 	m.erase(++m.begin());
 	//모든 원소 삭제
 	m.clear();
+		
+
+	/*---------------------------------------------------------------------*/
+	priority_queue<int, vector<int>, less<int> > pq;
+	
+	struct s {
+		int start;
+		int end;
+		int value;
+
+		bool operator<(s b) {
+			return this->value < b.value;
+		}
+	};
+
+	bool operator<(s t, s u) {
+		return t.value < u.value;
+	}
+	//https://koosaga.com/9
+	
+
+	/*--------------------------- priority queue ---------------------------*/
+
+
+	/*---------------------------------------------------------------------*/
+	
+	/*------------------------------ Algorithm ----------------------------*/
+	
+	vector<int> arr2;
+
+	//cout << *max_element(arr2.begin(), arr2.end());
+	//cout << *min_element(arr2.begin(), arr2.end());
+
+
+	//lower_bound
+	//첫 원소의 주소와 마지막 원소의 다음 주소와 비교할 원소를 넘겨준다.
+	//구간내의 원소들은 정렬되어 있어야한다.
+	//리턴 값은 해당 원소의 주소값이다. 없다면 arr1+n을 리턴한다.
+	//또는 arr2.end()를 리턴한다.
+	
+	// 나중에 알아보자.
+	//int idx = lower_bound(arr2, arr1 + n, 42) - arr1;
+	//printf("%d\n", idx);
+
+	//upper_bound
+	//사용법은 같다.
+	//vector<int>::iterator it = upper_bound(arr2.begin(), arr2.end(), 54);
+	//if (it != arr2.end())
+	//	printf("%d\n", *it);
+
+
+	//unique
+	//중복된 값이 존재하는 벡터의 첫 번째 원소와 마지막 원소의 주소를 인자로 넘겨준다.
+	//구간 내에 중복된 원소를 구간의 끝 부분으로 밀어준다. 그리고 중복되지 않은 원소들의 마지막 원소의 다음 주소를 리턴한다.
+	//용법
+	//arr2.erase(unique(arr2.begin(), arr2.end()), arr2.end());
+
+
+	// Vector에서 중복값 삭제
+	//https://goodgid.github.io/Vector-Delete-Duplicate-Value/
+	//https://dpdpwl.tistory.com/39	
+
+	//Student students[] = {
+	//	Student("ndb", 90),
+	//	Student("lsw", 93),
+	//	Student("phw", 97),
+	//	Student("kjg", 87),
+	//	Student("lti", 92)
+	//};
+
+	//sort(students, students + 5);
+	//for (int i = 0; i < 5; i++) {
+	//	//cout << students[i].name << ' ';
+	//	printf("%s\n", students[i].name.c_str());
+	//}
+
+	//bool compare(pair<string, pair<int, > > a, pair<string, pair<int, int> > b) 
+	//{
+	//	if (a.second.first == b.second.first) {
+	//		return a.second.second > b.second.second;
+	//	}
+	//	else
+	//		return a.second.first > b.second.first;
+	//};
+
+	//vector<pair<string, int>> v;
+	//v.push_back({ "ndb", 90 });
+	//v.push_back({ "lsw", 93 });
+	//v.push_back({ "phw", 97 });
+	//v.push_back({ "kjg", 87 });
+	//v.push_back({ "lti", 92 });
+
+	//sort(v.begin(), v.end());
+	//for (int i = 0; i < v.size(); i++) {
+	//	//cout << students[i].name << ' ';
+	//	//printf("%s\n", v[i].first);
+	//	cout << v[i].first << " ";
+	//}
 
 	/*---------------------------------------------------------------*/
+	return 0;
 }

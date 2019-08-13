@@ -1,99 +1,102 @@
-#include<iostream>
-#include<queue>
-#include<string.h>
-using namespace std;
-#define MAX 350
-#define BASE 150
 
-typedef struct pos {
-	int vital;
-	int x, y;
-}POS;
 
-int container[MAX][MAX] = { 0, };
-int dx[] = { 0,0,1,-1 };//동서남북
-int dy[] = { 1,-1,0,0 };//동서남북
 
-int main()
-{
-	freopen("input.txt", "r", stdin);
-	int test_case;
-	int T;
-	cin >> T;
-
-	for (test_case = 1; test_case <= T; ++test_case)
-	{
-		int N, M, K;
-		queue <POS> q[11];
-		int ans = 0;
-		cin >> N >> M >> K;
-		memset(container, 0, sizeof(container));
-		for (int i = 0; i < N; i++) {
-			for (int j = 0; j < M; j++) {
-				cin >> container[i + BASE][j + BASE];
-				if (container[i + BASE][j + BASE]) {
-					POS first;
-					first.vital = container[i + BASE][j + BASE] * 2; //why *2??
-					first.x = i + BASE, first.y = j + BASE;
-					q[container[i + BASE][j + BASE]].push(first);
-				}
-			}
-		}//입력완료
-
-		for (int i = 0; i <= K; i++) {
-			for (int j = 10; j >= 1; j--) {
-				int size = q[j].size();
-				for (int k = 0; k < size; k++) {
-
-					auto x = q[j].front(); q[j].pop();
-					if (x.vital>j) {
-						if (container[x.x][x.y] > 0) {
-							ans++;
-							container[x.x][x.y] = -container[x.x][x.y];
-						}
-						q[j].push({ x.vital - 1,x.x,x.y });
-					}//비활성
-
-					else if (x.vital == j) {
-						q[j].push({ x.vital - 1,x.x,x.y });
-						for (int z = 0; z < 4; z++) {
-							int nx = x.x + dx[z];
-							int ny = x.y + dy[z];
-							if (container[nx][ny]) continue;
-							container[nx][ny] = j;
-							q[j].push({ x.vital * 2,nx,ny });
-						}
-					}//확장 + 활성
-
-					else if (x.vital < j && x.vital) {
-						q[j].push({ x.vital - 1,x.x,x.y });
-					}//확장 이후 활성
-
-					else { ans--; }//죽음
-				}
-			}
-		}
-		cout << "#" << test_case << ' ' << ans << '\n';
-	}
-	return 0;//정상종료시 반드시 0을 리턴해야합니다.
-}
-
+//#include<iostream>
+//#include<queue>
+//#include<string.h>
+//using namespace std;
+//#define _max 350
+//#define BASE 150
+//
+//typedef struct pos {
+//	int vital;
+//	int x, y;
+//}POS;
+//
+//int container[_max][_max] = { 0, };
+//int dx[] = { 0,0,1,-1 };//동서남북
+//int dy[] = { 1,-1,0,0 };//동서남북
+//
+//int main()
+//{
+//	freopen("input.txt", "r", stdin);
+//	int test_case;
+//	int T;
+//	cin >> T;
+//
+//	for (test_case = 1; test_case <= T; ++test_case)
+//	{
+//		int N, M, K;
+//		queue <POS> q[11];
+//		int ans = 0;
+//		cin >> N >> M >> K;
+//		memset(container, 0, sizeof(container));
+//		for (int i = 0; i < N; i++) {
+//			for (int j = 0; j < M; j++) {
+//				cin >> container[i + BASE][j + BASE];
+//				if (container[i + BASE][j + BASE]) {
+//					POS first;
+//					first.vital = container[i + BASE][j + BASE] * 2; //why *2??
+//					first.x = i + BASE, first.y = j + BASE;
+//					q[container[i + BASE][j + BASE]].push(first);
+//				}
+//			}
+//		}//입력완료
+//
+//		for (int i = 0; i <= K; i++) {
+//			for (int j = 10; j >= 1; j--) {
+//				int size = q[j].size();
+//				for (int k = 0; k < size; k++) {
+//
+//					auto x = q[j].front(); q[j].pop();
+//					if (x.vital>j) {
+//						if (container[x.x][x.y] > 0) {
+//							ans++;
+//							container[x.x][x.y] = -container[x.x][x.y];
+//						}
+//						q[j].push({ x.vital - 1,x.x,x.y });
+//					}//비활성
+//
+//					else if (x.vital == j) {
+//						q[j].push({ x.vital - 1,x.x,x.y });
+//						for (int z = 0; z < 4; z++) {
+//							int nx = x.x + dx[z];
+//							int ny = x.y + dy[z];
+//							if (container[nx][ny]) continue;
+//							container[nx][ny] = j;
+//							q[j].push({ x.vital * 2,nx,ny });
+//						}
+//					}//확장 + 활성
+//
+//					else if (x.vital < j && x.vital) {
+//						q[j].push({ x.vital - 1,x.x,x.y });
+//					}//확장 이후 활성
+//
+//					else { ans--; }//죽음
+//				}
+//			}
+//		}
+//		cout << "#" << test_case << ' ' << ans << '\n';
+//	}
+//	return 0;//정상종료시 반드시 0을 리턴해야합니다.
+//}
+//
 
 //#include <iostream>
 //#include <queue>
 //using namespace std;
 //
-//#define MAXL 352
+//#define _maxL 352
 //struct data_type {
 //	//0: 빈 공간, 1: 비활성 상태, 2: 활성 상태, 3: 죽은 상태
 //	int status;
 //	//LP
 //	//HP: 죽은 상태: 0, 비활성 상태일 경우 증가, 활성 상태일 경우 감소
 //	int LP, HP;
-//}Map[2][MAXL][MAXL];
+//}Map[2][_maxL][_maxL];
 //
 //int T, N, M, K;
-//data_type Map[2][MAXL][MAXL];
+//data_type Map[2][_maxL][_maxL];
 //
 //int dir[4][2] = { {0, -1}, {0, 1}, {1, 0}, {-1, 0} };
 //
@@ -212,3 +215,9 @@ int main()
 //	return 0;
 //
 //}
+
+/*
+https://charm-charm.postype.com/post/3209544
+https://swexpertacademy.com/main/learn/course/lectureHtmlViewer.do#none
+
+*/

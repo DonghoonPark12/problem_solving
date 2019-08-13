@@ -102,8 +102,8 @@ int solution(int N) {
 		visit[atom[j][0]][atom[j][1]]++;//해당 위치에 visit 표시
 	}
 
-	int nMaxLoop = 4002;
-	for (int i = 0; i < nMaxLoop; ++i) {
+	int n_maxLoop = 4002;
+	for (int i = 0; i < n_maxLoop; ++i) {
 
 		//원자 이동
 		for (int j = 0; j< nRest; ++j) { //원자의 갯수, 4

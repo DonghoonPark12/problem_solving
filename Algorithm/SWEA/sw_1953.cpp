@@ -16,7 +16,7 @@
 //queue<node> q;
 //int p;
 //int N, M, R, C, L;
-
+//
 //void bfs(int r, int c) {//세로 위치R, 가로 위치C
 //	q.push(node(r, c, 1));
 //	visited[r][c] = true;
@@ -64,7 +64,7 @@
 //	}
 //
 //}
-
+//
 //int get_result() {
 //	int sum = 0;
 //	for (int i = 0; i < N; i++) {
@@ -75,7 +75,7 @@
 //	}
 //	return sum ;
 //}
-
+//
 //void init() {
 //	memset(arr, 0, sizeof(arr));
 //	memset(visited, false, sizeof(visited));
@@ -107,186 +107,206 @@
 //
 //}
 
-//#include <cstdio>
-//
-//int map[50][50];
-//int chk[50][50];
-//int dx[4] = { 0,1,0,-1 };
-//int dy[4] = { 1,0,-1,0 };
-//int pipe[8][4] = {
+
+//DFS 방식
+#include <cstdio>
+#include <iostream>
+#include <memory.h>
+using namespace std;
+
+int map[50][50];
+int visited[50][50];
+int dx[4] = { 0,1,0,-1 };
+int dy[4] = { 1,0,-1,0 };
+//int pipe[8][4] = {  // 우, 하 ,좌 ,상 
 //	{ 0,0,0,0 },  //0
 //	{ 1,1,1,1 },  //1
 //	{ 0,1,0,1 },  //2
-//	{ 1,0,1,0 },  //3
+//	{ 1,0,1,0 },  //3 
 //	{ 1,0,0,1 },  //4
 //	{ 1,1,0,0 },  //5
 //	{ 0,1,1,0 },  //6
 //	{ 0,0,1,1 }   //7
 //};
-//
-//int T, N, M, R, C, L;
-//int result;
-//
-//void dfs(int x, int y, int b_x, int b_y, int time)
-//{
-//	int X, Y;
-//	if (chk[x][y] != 1)
-//	{
-//		result++;
-//		chk[x][y] = 1;
-//	}
-//	for (int i = 0; i < 4; i++)
-//	{
-//		X = x + dx[i];
-//		Y = y + dy[i];
-//		/*
-//			X, Y가 세로, 가로 범위를 벗어나거나, 본래 자리로 돌아 오거나, 
-//			map[X][Y] == 0 || pipe[map[x][y]][i] == 0  ??
-//			pipe[map[X][Y]][(i + 2) % 4] == 0          ??
-//			time + 1 > L							   ??
-//		*/
-//		if (X < 0 || X >= N || Y < 0 || Y >= M || (X == b_x && Y == b_y) || map[X][Y] == 0 || pipe[map[x][y]][i] == 0 ||
-//			pipe[map[X][Y]][(i + 2) % 4] == 0 || time + 1 > L)
-//			continue;
-//		dfs(X, Y, x, y, time + 1);
-//	}
-//}
-//
-//int main() {
-//	freopen("input.txt", "r", stdin);
-//	scanf("%d", &T);
-//	for (int t = 1; t <= T; t++)
-//	{
-//		result = 0;
-//		scanf("%d %d %d %d %d", &N, &M, &R, &C, &L);
-//		for (int i = 0; i < N; i++)
-//		{
-//			for (int j = 0; j < M; j++)
-//			{
-//				scanf("%d", &map[i][j]);
-//				chk[i][j] = 0;
-//			}
-//		}
-//		dfs(R, C, 0, 0, 1);
-//		printf("#%d %d\n", t, result);
-//	}
-//	return 0;
-//}
 
-#include <cstdio>
-#include <queue>
-#include <memory.h>
-using namespace std;
-
-int t, n, m, sx, sy, l, x, y, ax, ay, time, cnt;
-int map[50][50];
-bool visited[50][50];
-int dx[] = { 1,-1,0,0 };
-int dy[] = { 0,0,1,-1 };
-
-struct Node {
-	int x;
-	int y;
-	int time;
-	Node(int _x, int _y, int _time)
-		: x(_x), y(_y), time(_time)
-	{ }
+int pipe[8][4] = { //상, 하, 좌, 우
+	{ 0,0,0,0 },
+	{ 1,1,1,1 },
+	{ 1,1,0,0 },
+	{ 0,0,1,1 },
+	{ 1,0,0,1 }, //4 
+	{ 0,1,0,1 },
+	{ 0,1,1,0 },
+	{ 1,0,1,0 }
 };
 
-int getResult() {
-	int cnt = 0;
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < m; j++) {
-			if (visited[i][j]) {
-				cnt++;
-			}
-		}
+int T, N, M, R, C, L;
+int result;
+
+void DFS(int x, int y, int time) {
+	if (time == L) {
+		return;
 	}
-	return cnt;
-}
+	int dest;
 
-void bfs(int a, int b) {
-	queue<Node> q;
-	q.push(Node(a, b, 1));
-	visited[a][b] = true;
+	for (int i = 0; i < 4; i++) { //0, 1, 2, 3 --> 1, 0, 3, 2
+		int ax = x + dx[i];
+		int ay = y + dy[i];
 
-	while (!q.empty()) {
-		x = q.front().x;
-		y = q.front().y;
-		time = q.front().time;
-		q.pop();
+		if      (i == 0) dest = 1;
+		else if (i == 1) dest = 0;
+		else if (i == 2) dest = 3;
+		else             dest = 2;
 
-		if (time == l) {
-			continue;
-		}
+		if (ax >= 0 && ay >= 0 && ax < N && ay < M) {
+			if (pipe[map[x][y]][i] == 1 && pipe[map[ax][ay]][dest] == 1) {
 
-		for (int i = 0; i < 4; i++) {
-			ax = x + dx[i];
-			ay = y + dy[i];
-			if (ax >= 0 && ay >= 0 && ax < n && ay < m) {
-				// i : 0=하,1=상,2=우,3=좌
-				// stat :
-				// 1 : 상하좌우
-				// 2 : 상하
-				// 3 : 좌우
-				// 4 : 상우
-				// 5 : 우하
-				// 6 : 좌하
-				// 7 : 좌상
-				if (!visited[ax][ay]) {                                          // 이동하려는 새로운 map위치 ax, ay
-					if (map[x][y] == 2) {if (i == 2 || i == 3) continue; }       //│ 경우 우, 좌 이동 불가
-					else if (map[x][y] == 3) { if (i == 0 || i == 1) continue; } //─ 경우 하, 상 이동 불가
-					else if (map[x][y] == 4) { if (i == 0 || i == 3) continue; } //└ 경우 하, 좌 이동 불가
-					else if (map[x][y] == 5) { if (i == 1 || i == 3) continue; } //┌ 경우 상, 좌 이동 불가
-					else if (map[x][y] == 6) { if (i == 1 || i == 2) continue; } // ┐경우 상, 우 이동 불가
-					else if (map[x][y] == 7) { if (i == 0 || i == 2) continue; } // ┘경우 하, 우 이동 불가
+				if (!visited[ax][ay] || visited[ax][ay] > visited[x][y] + 1) {
 
-					if (i == 0) {												 //하 일 경우, 
-						if (map[ax][ay] == 1 || map[ax][ay] == 2 || map[ax][ay] == 4 || map[ax][ay] == 7) { //┼,│,└ , ┘만 통과 가능.   
-							q.push(Node(ax, ay, time + 1)); visited[ax][ay] = true;
-						}
-					}
-					else if (i == 1) {											 //상
-						if (map[ax][ay] == 1 || map[ax][ay] == 2 || map[ax][ay] == 5 || map[ax][ay] == 6) { //┼,│,┌ ,┐ 만 통과 가능.
-							q.push(Node(ax, ay, time + 1)); visited[ax][ay] = true;
-						}
-					}
-					else if (i == 2) {											 //우
-						if (map[ax][ay] == 1 || map[ax][ay] == 3 || map[ax][ay] == 6 || map[ax][ay] == 7) {//┼,─, ┐, ┘ 만 통과 가능.   
-							q.push(Node(ax, ay, time + 1)); visited[ax][ay] = true;
-						}
-					}
-					else {														 //좌
-						if (map[ax][ay] == 1 || map[ax][ay] == 3 || map[ax][ay] == 4 || map[ax][ay] == 5) {//┼,─,└,┌   만 통과 가능.  
-							q.push(Node(ax, ay, time + 1)); visited[ax][ay] = true;
-						}
-					}
+					visited[ax][ay] = time + 1;
+					DFS(ax, ay, time + 1);
 				}
 			}
 		}
 	}
 }
 
-void init() {
-	memset(visited, false, sizeof(visited));
-	memset(map, 0, sizeof(map));
-}
-
 int main() {
-	freopen("input.txt", "r", stdin);
-	scanf("%d", &t);
-	for (int tc = 1; tc <= t; tc++) {
-		init();
+	int T, R, C;
+	cin >> T;
+	for (int tc = 1; tc <= T; tc++) {
+		int cnt = 0;
+		memset(visited, 0, sizeof(visited));
+		memset(map, 0, sizeof(map));
 
-		scanf("%d %d %d %d %d", &n, &m, &sx, &sy, &l);
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < m; j++) {
-				scanf("%d", &map[i][j]);
+		cin >> N >> M >> R >> C >> L;
+		for (int i = 0; i < N; i++) {
+			for (int j = 0; j < M; j++) {
+				cin >> map[i][j];
 			}
 		}
-
-		bfs(sx, sy);
-
-		printf("#%d %d\n", tc, getResult());
+		visited[R][C] = 1;
+		DFS(R, C, 1);
+		for (int i = 0; i < N; i++) {
+			for (int j = 0; j < M; j++) {
+				if (visited[i][j]) {
+					cnt++;
+				}
+			}
+		}
+		cout << "#" << tc << " " << cnt << endl;
 	}
 }
+
+
+//BFS 방식
+//#include <cstdio>
+//#include <queue>
+//#include <cstring>
+//using namespace std;
+//
+//int t, n, m, sx, sy, l, x, y, ax, ay, _time, cnt;
+//int map[50][50];
+//bool visited[50][50];
+//int dx[] = { 1,-1,0,0 };//하, 상, 우, 좌
+//int dy[] = { 0,0,1,-1 };
+//
+//typedef struct _Node {
+//	int x;
+//	int y;
+//	int t;
+//	_Node(int _x, int _y, int _t)
+//		: x(_x), y(_y), t(_t)
+//	{ }
+//}Node;
+//
+//void init() {
+//	memset(visited, false, sizeof(visited));
+//	memset(map, 0, sizeof(map));
+//}
+//
+//int getResult() {
+//	int cnt = 0;
+//	for (int i = 0; i < n; i++) {
+//		for (int j = 0; j < m; j++) {
+//			if (visited[i][j]) {
+//				cnt++;
+//			}
+//		}
+//	}
+//	return cnt;
+//}
+//
+//void bfs(int a, int b) {
+//	queue<Node> q;
+//	q.push(Node(a, b, 1));
+//	visited[a][b] = true;
+//
+//	while (!q.empty()) {
+//		x = q.front().x;
+//		y = q.front().y;
+//		_time = q.front().t;
+//		q.pop();
+//
+//		if (_time == l) {
+//			continue;
+//		}
+//
+//		for (int i = 0; i < 4; i++) {
+//			ax = x + dx[i];
+//			ay = y + dy[i];
+//			if (ax >= 0 && ay >= 0 && ax < n && ay < m) {
+//			if (!visited[ax][ay]) {                                          // 이동하려는 새로운 map위치 ax, ay
+//					if (map[x][y] == 2) {if (i == 2 || i == 3) continue; }       //│ 경우 우, 좌 이동 불가
+//					else if (map[x][y] == 3) { if (i == 0 || i == 1) continue; } //─ 경우 하, 상 이동 불가
+//					else if (map[x][y] == 4) { if (i == 0 || i == 3) continue; } //└ 경우 하, 좌 이동 불가
+//					else if (map[x][y] == 5) { if (i == 1 || i == 3) continue; } //┌ 경우 상, 좌 이동 불가
+//					else if (map[x][y] == 6) { if (i == 1 || i == 2) continue; } // ┐경우 상, 우 이동 불가
+//					else if (map[x][y] == 7) { if (i == 0 || i == 2) continue; } // ┘경우 하, 우 이동 불가
+//
+//					if (i == 0) {												 //하 일 경우, 
+//						if (map[ax][ay] == 1 || map[ax][ay] == 2 || map[ax][ay] == 4 || map[ax][ay] == 7) { //┼,│,└ , ┘만 통과 가능.   
+//							q.push(Node(ax, ay, _time + 1)); visited[ax][ay] = true;
+//						}
+//					}
+//					else if (i == 1) {											 //상
+//						if (map[ax][ay] == 1 || map[ax][ay] == 2 || map[ax][ay] == 5 || map[ax][ay] == 6) { //┼,│,┌ ,┐ 만 통과 가능.
+//							q.push(Node(ax, ay, _time + 1)); visited[ax][ay] = true;
+//						}
+//					}
+//					else if (i == 2) {											 //우
+//						if (map[ax][ay] == 1 || map[ax][ay] == 3 || map[ax][ay] == 6 || map[ax][ay] == 7) {//┼,─, ┐, ┘ 만 통과 가능.   
+//							q.push(Node(ax, ay, _time + 1)); visited[ax][ay] = true;
+//						}
+//					}
+//					else {														 //좌
+//						if (map[ax][ay] == 1 || map[ax][ay] == 3 || map[ax][ay] == 4 || map[ax][ay] == 5) {//┼,─,└,┌   만 통과 가능.  
+//							q.push(Node(ax, ay, _time + 1)); visited[ax][ay] = true;
+//						}
+//					}
+//				}
+//			}
+//		}
+//	}
+//}
+//
+//
+//int main() {
+//	freopen("input.txt", "r", stdin);
+//	scanf("%d", &t);
+//	for (int tc = 1; tc <= t; tc++) {
+//		init();
+//
+//		scanf("%d %d %d %d %d", &n, &m, &sx, &sy, &l);
+//		for (int i = 0; i < n; i++) {
+//			for (int j = 0; j < m; j++) {
+//				scanf("%d", &map[i][j]);
+//			}
+//		}
+//
+//		bfs(sx, sy);
+//
+//		printf("#%d %d\n", tc, getResult());
+//	}
+//	return 0;
+//}

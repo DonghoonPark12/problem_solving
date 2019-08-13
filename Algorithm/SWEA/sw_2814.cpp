@@ -5,10 +5,10 @@
 using namespace std;
 bool visited[11];
 int len;
-int _max = 0;
+int __max = 0;
 void dfs(int s, vector<vector<int>> m) {
 	len++;
-	if (len > _max) _max = len;
+	if (len > __max) __max = len;
 	visited[s] = true;
 	for (int i = 1; i < m.size(); i++) {
 		if (visited[i] == false && m[s][i] == 1) {//방문하지 않았고, 간선이 연결되어 있다면.
@@ -37,19 +37,19 @@ int main(void)
 			matrix[v2][v1] = 1;
 		}
 		//for (int s = 1; s < matrix.size(); s++) {
-		//	len = 0; _max = 0;
+		//	len = 0; __max = 0;
 		//	dfs(s, matrix);
 		//	//dfs(1, matrix);
 
 		//	memset(visited, false, sizeof(visited));
 		//}
 		
-		len = 0; _max = 0;
+		len = 0; __max = 0;
 		dfs(1, matrix);
 		memset(visited, false, sizeof(visited));
 
 		printf("#%d ", test_case + 1);
-		printf("%d\n", _max);
+		printf("%d\n", __max);
 	}
 
 	return 0;

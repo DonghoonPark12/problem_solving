@@ -2,7 +2,7 @@
 #include <vector>
 #include <iostream>
 using namespace std;
-int _max(int a, int b, int c, int d) {
+int __max(int a, int b, int c, int d) {
 	int L = a > b ? a : b;
 	int R = c > d ? c : d;
 	return L > R ? L : R;
@@ -24,7 +24,7 @@ int main(void)
 		int Answer = 0;
 		for (int i = 2; i < len - 2; i++) {
 			if (arr[i] > arr[i + 1] && arr[i] > arr[i + 2] && arr[i] > arr[i - 1] && arr[i] > arr[i - 2])
-				Answer += arr[i] - _max(arr[i - 1], arr[i - 2], arr[i + 1], arr[i + 2]);
+				Answer += arr[i] - __max(arr[i - 1], arr[i - 2], arr[i + 1], arr[i + 2]);
 		}
 
 
@@ -38,7 +38,7 @@ int main(void)
 
 //#define	_CRT_SECURE_NO_WARNINGS
 //#include <stdio.h>
-//#define max(a,b) (((a)>(b)) ? (a):(b))
+//#define _max(a,b) (((a)>(b)) ? (a):(b))
 //int main(void)
 //{
 //	int T, test_case;
@@ -79,7 +79,7 @@ int main(void)
 //					}
 //				}
 //				*/
-//				temp = max(max(a[i - 2], a[i - 1]), max(a[i + 1], a[i + 2]));
+//				temp = _max(_max(a[i - 2], a[i - 1]), _max(a[i + 1], a[i + 2]));
 //				
 //				if(a[i] - temp >0){ //조망권 확보된 집이 있다면
 //					Answer = Answer + a[i] - temp;

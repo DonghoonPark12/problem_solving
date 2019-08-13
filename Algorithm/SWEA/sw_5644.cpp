@@ -37,11 +37,11 @@ int checkPoint(vector<AP> APs, int ax, int ay, int bx, int by) {
 	for (int i = 0; i < A; i++) {
 		for (int j = 0; j < A; j++) {
 			if (i == j) {
-				sum = max(sum, possibleA[i]);
-				sum = max(sum, possibleB[i]);
+				sum = _max(sum, possibleA[i]);
+				sum = _max(sum, possibleB[i]);
 			}
 			else {
-				sum = max(sum, possibleA[i] + possibleB[j]);
+				sum = _max(sum, possibleA[i] + possibleB[j]);
 			}
 		}
 	}
@@ -172,11 +172,11 @@ int main() {
 //			for (int k = 0; k < bc; k++) {
 //				for (int l = 0; l < bc; l++) {
 //					if (k == l) {
-//						sum = max(sum, a[k]);
-//						sum = max(sum, b[k]);
+//						sum = _max(sum, a[k]);
+//						sum = _max(sum, b[k]);
 //					}
 //					else
-//						sum = max(sum, a[k] + b[l]);
+//						sum = _max(sum, a[k] + b[l]);
 //				}
 //			}
 //
@@ -253,7 +253,7 @@ int main() {
 //			else {//A가 2개 이상, B가 2개 이상 겹칠때 : 둘다 겹치는 것을 가지고(가장 큰 충전량) + 둘중에 큰 것을 가진다.  
 //				if (v1.front().second == v2.front().second) {
 //					eng += v1.front().first;
-//					eng += max(v1[1].first, v2[1].first);
+//					eng += _max(v1[1].first, v2[1].first);
 //				}
 //			}
 //		}

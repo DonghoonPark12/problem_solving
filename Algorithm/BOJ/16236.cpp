@@ -1,253 +1,392 @@
+//#include <iostream>
+//#include <queue>
+//using namespace std;
+//
+//int n;
+//int m[20][20];
+//
+//const int dx[4] = { 0, -1, 0, 1 }; //위, 왼쪽, 아래, 오른쪽
+//const int dy[4] = { -1, 0, 1, 0};
+//
+//typedef struct _fish {
+//	int y, x;
+//	int size;
+//	int dis2s;
+//
+//	bool operator <(const _fish &a) {
+//		//return this->dis2s < a.dis2s;
+//		if (this->dis2s == a.dis2s) {
+//			if (this->y < a.y)
+//				return true;
+//			else if (this->y == a.y) {
+//				if (this->x < a.x) return true;
+//				else return  false;
+//			}
+//			else {
+//				if (this->y < a.y) return true;
+//				else return false;
+//			}
+//		}
+//		else {
+//			return this->dis2s < a.dis2s;
+//		}
+//	}
+//
+//}fish;
+//
+//typedef struct _sh{
+//	int y, x;
+//	int size;
+//
+//	//int time;
+//	//int eat;
+//}sh;
+//
+//int num_f;
+//fish f[400];
+////int dist[400];
+//sh s;
+//
+//int dis;
+//
+//int eatable;
+//
+//int t;
+//
+//int cnt;
+//
+///*
+//bool cmp(const fish &a, const fish &b) {
+//	if (a.dis2s == b.dis2s) { 
+//		if (b.y < a.y) { return true; }
+//		else if (b.y == a.y) { //y 높이가 같으면
+//			if (b.x < a.x) return true;
+//			else return false;
+//		}
+//		else
+//			false;//
+//	}
+//	else if (a.dis2s < b.dis2s)//
+//		return true;
+//	else
+//		return false;
+//}
+//*/
+//int main() {
+//	cin >> n;
+//
+//	for (int i = 0; i < n; i++) {
+//		for (int j = 0; j < n; j++) {
+//			cin >> m[i][j];
+//			if (m[i][j] != 0 && m[i][j] != 9) { 
+//				f[num_f].y = i;
+//				f[num_f].x = j;
+//				f[num_f].size = m[i][j];
+//				num_f++;
+//				if (m[i][j] < 2) { eatable++; }
+//			}
+//			if (m[i][j] == 9) {
+//				s.y = i; s.x = j; s.size = 2;
+//
+//				//s.eat = 0; s.time = 0;
+//				m[i][j] = 0;
+//			}
+//		}
+//	}
+//
+//
+//	if (eatable == 0 || (eatable == 1 && f[0].size >= s.size)) {
+//		cout << "0";
+//		return 0;
+//	}
+//	else if (eatable == 1 && f[0].size < s.size) {
+//		dis = abs(s.x - f[0].x) + abs(s.y - f[0].y);
+//		cout << dis;
+//		return 0;
+//	}
+//
+//
+//	
+//	while(eatable){
+//		for (int i = 0; i < num_f; i++) { 
+//			f[i].dis2s = abs(s.x - f[i].x) + abs(s.y - f[i].y);
+//		}
+//
+//		sort(f, f + num_f);
+//
+//		//target을 정하고
+//		int target = 0;
+//		while (1) {
+//			if (f[target].size > s.size) target++;
+//			else break;
+//		}
+//
+//		//4방향 탐색하면서 이동
+//		while ((s.x != f[target].x) || (s.y != f[target].y)) {
+//			int i;
+//			for (i = 0; i < 4; i++) {
+//				int nx = s.x + dx[i];
+//				int ny = s.y + dy[i];
+//
+//				// 경계 벗어나거나, 이동한 곳에 몸무게가 같거나 큰 것이 존재하면
+//				if (nx <0 || nx > n || ny < 0 || ny > n || m[ny][nx] > s.size)
+//					continue;
+//
+//				// target과의 거리가 되려 멀어지나면 pass
+//				if ((abs(nx - f[target].x) + abs(ny - f[target].y)) > (abs(s.x - f[target].x) + abs(s.y - f[target].y)))
+//					continue;
+//
+//				break;
+//			}
+//
+//			s.x = dx[i]; s.y = dy[i];
+//			t++;
+//		}
+//
+//		//물고기 먹음
+//		num_f--;
+//		s.y = 0; s.x = 0;
+//		cnt++;
+//		if (cnt == s.size) {
+//			s.size++;
+//			cnt = 0;
+//
+//			//eatable 업데이트
+//			eatable = 0;
+//			for (int i = 0; i < num_f; i++) {
+//				if (s.size > f[i].size) eatable++;
+//			}
+//		}
+//
+//
+//	}
+//
+//	cout << t;
+//
+//	return 0;
+//}
+
+//na982
+/*
 #include <iostream>
-#include <vector>
-#include <algorithm>
 #include <queue>
-#include <cstring>
-
-#define max_int 21
-
 using namespace std;
 
-//시간 복잡도: O(n^4)
-//공간 복잡도: O(n^2)
-//사용한 알고리즘: 완전탐색 by BFS, STL sorting
-//사용한 자료구조: 그래프 by 2차원 배열
+typedef struct _sh {
+	int y, x,time;
+}sh;
+
+int n;
+int m[20][20];
+
+int s_size, cnt;
+sh s;
+
+const int dx[4] = { 0, -1, 0, 1 }; //위, 왼쪽, 아래, 오른쪽
+const int dy[4] = { -1, 0, 1, 0 };
 
 
-int n, cur_x, cur_y, result, cur_size, cur_eat;
-int d[max_int][max_int];
-int check[max_int][max_int];
-int dx[] = { 0, 0, 1, -1 };
-int dy[] = { -1, 1, 0, 0 };
-
-
-struct info {
-	int x;
-	int y;
-	int dist;
-};
-
-//먹을 수 있는 물고기 정보를 넣을 벡터 v
-vector<info> v;
-
-//먹을 수 있는 물고기를 조건에 따라 정렬한다.
-bool cmp(const info &a, const info &b) {
-
-	if (a.dist == b.dist) {
-
-		if (a.x == b.x) {
-			return a.y < b.y;
-		}
-		else return a.x < b.x;
-	}
-	else return a.dist < b.dist;
-}
-
-//상어의 현재 위치에서 이동할 수 있는 모든 영역까지의 거리를 계산한다.
-void find_dist(int x, int y) {
-
-	check[x][y] = 0;
-	queue<pair<int, int>> q;
-	q.push(make_pair(x, y));
-
-	while (!q.empty()) {
-		x = q.front().first;
-		y = q.front().second;
-		q.pop();
-
-		for (int i = 0; i<4; i++) {
-			int nx = x + dx[i];
-			int ny = y + dy[i];
-
-			if (nx >= 0 && nx<n && ny >= 0 && ny<n) {
-				if (check[nx][ny] == 0 && d[nx][ny] <= cur_size) {
-					check[nx][ny] = check[x][y] + 1;
-					q.push(make_pair(nx, ny));
-				}
+int main() {
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			cin >> m[i][j];
+			if (m[i][j] == 9) {
+				s.y = i, s.x = j, s.time = 0;
+				s_size = 2, cnt = 0;
+				m[i][j] = 0;
 			}
 		}
 	}
+
+	bool is_update = true;
+	while (is_update) {
+		is_update = false;
+		
+		bool visited[20][20] = { false, };
+		queue<sh> q;
+		visited[s.y][s.x] = true;
+		q.push(s);
+
+		sh target;
+		target.y = 20, target.time = -1;
+		while (!q.empty()) {
+			sh cur = q.front(); q.pop();
+
+			//아직 갱신이 되지 않고
+			//가장 가까운 물고기를 잡음
+			if (target.time != -1 && target.time < cur.time)
+				break;
+
+			if (m[cur.y][cur.x] < s_size && m[cur.y][cur.x] != 0) {
+				is_update = true;
+				if (target.y > cur.y || (target.y == cur.y && target.x > cur.x)) {
+					target = cur;
+				}
+			}
+			
+			for (int dir = 0; dir < 4; dir++) {
+				sh next;
+				next.y = cur.y + dy[dir];
+				next.x = cur.x + dx[dir];
+				next.time = cur.time + 1;
+
+				if (next.x <0 || next.x >= n || next.y < 0 || next.y >= n)
+					continue;
+
+				if (visited[next.y][next.x] == false && s_size >= m[next.y][next.x]) {
+					visited[next.y][next.x] = true;
+					q.push(next);
+				}
+			}
+		}
+
+		if (is_update) {
+			s = target;
+			++cnt;
+			if (cnt == s_size) {
+				++s_size;
+				cnt = 0;
+			}
+			m[s.y][s.x] = 0;
+		}
+	}
+
+	cout << s.time;
+	return 0;
+}
+*/
+
+	//물고기 먹을 수 있는지 여부?
+
+		
+	/*	
+	bool is_update = true;
+	while (is_update) {
+		is_update = false;
+
+		queue<sh> q;
+		bool visited[20][20] = { false, };
+		visited[s.y][s.x] = true;
+		q.push(s);
+
+		sh c;
+		c.y = 20, c.time = -1;
+		while (!q.empty()) {
+			sh cur = q.front(); q.pop();
+
+			if (c.time != -1 && c.time < cur.time) {
+				break; //가장 가까운 물고기를 잡음
+			}
+
+			if (m[cur.y][cur.x] < s.size && m[cur.y][cur.x] != 0) {
+				is_update = true;
+				if (c.y > cur.y || (c.y == cur.y && c.x > cur.x)) {
+					c = cur;
+				}
+			}
+
+			for (int dir = 0; dir < 4; ++dir) {
+				sh ne;
+				ne.y = cur.y + dy[dir];
+				ne.x = cur.x + dx[dir];
+				ne.time = c.time + 1;
+
+				if (ne.y < 0 || ne.y >= n || ne.x < 0 || ne.x >= n)
+					continue;
+
+				if (visited[ne.y][ne.x] == false && s.size >= m[ne.y][ne.x]) {
+					visited[ne.y][ne.x] = true;
+					q.push(ne);
+				}
+			}
+		}
+
+		if (is_update) {
+			s = c;
+			++s.eat;
+			if (s.eat == s.size) {
+				++s.size;
+				s.eat = 0;
+			}
+			m[s.y][s.x] = 0;
+		}
+
+	}
+	*/
+
+#include <iostream>
+//#include <cstdio>
+#include <cstring>
+#include <queue>
+using namespace std;
+
+struct shark {
+	int d, x, y;//d는 상어로 부터의 거리
+	//min_heap
+	bool operator < (const shark &m) const {
+		if (d == m.d) {
+			if (x == m.x) return y > m.y; //x가 동일하면 m의 y값이 더 크면 false
+			else return x > m.x;
+
+		}
+	}
+};
+
+int n, body, eat, ans;
+int m[20][20];
+bool visited[20][20];
+priority_queue<shark> q;
+
+const int dy[] = { 0, 0, -1, +1 };
+const int dx[] = { -1, +1, 0, 0 };
+
+void bfs() {
+	while (!q.empty()) {
+		int d = q.top().d, x = q.top().x, y = q.top().y;
+		q.pop();
+		if (m[y][x] != 0 && m[y][x] < body) {
+			m[y][x] = 0; //eat fish
+			eat++;
+
+			// Body size + 1
+			if (eat == body) {
+				body++; eat = 0;
+			}
+			ans += d;
+			// Initializing distance, visited check and queue.
+			d = 0;
+			memset(visited, false, sizeof(visited));
+			while (!q.empty()) q.pop();
+		}
+		//explore using bfs
+		for (int i = 0; i < 4; i++) {
+			int nx = x + dx[i], ny = y + dy[i];
+			if (nx < 0 || nx > n || y < 0 || ny > n || visited[ny][nx]) continue;
+			if (m[y][x] != 0 && m[y][x] > body) continue;
+
+			q.push({d+1, ny, nx});
+			visited[ny][nx] = true;
+		}
+	}
+}
+
+void solve() {
+	bfs();
+	cout << ans;
 }
 
 int main() {
-	freopen("input.txt", "r", stdin);
-	scanf("%d", &n);
-
-	//1. 지도 정보 입력
-	for (int i = 0; i<n; i++) {
-		for (int j = 0; j<n; j++) {
-			scanf("%d", &d[i][j]);
-			if (d[i][j] == 9) {
-
-				//상어의 현재 위치 업데이트
-				cur_x = i;
-				cur_y = j;
-
-				//지도 정보를 수정한다
-				d[i][j] = 0;
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			cin >> m[i][j];
+			if (m[i][j] == 9) {
+				q.push({ 0, i, j });
+				body = 2; m[i][j] = 0;
 			}
 		}
 	}
-
-	//처음 시작했을때 상어의 정보 초기화
-	//상어의 크기는 2, 먹은 물고기는 0
-	cur_size = 2;
-	cur_eat = 0;
-
-	while (true) {
-
-		//2. 상어의 현재 위치에서 이동할 수 있는 모든 영역까지의 거리를 계산한다.
-		find_dist(cur_x, cur_y);
-
-		//3. 먹을 수 있는 물고기를 찾는다.
-		for (int i = 0; i<n; i++) {
-			for (int j = 0; j<n; j++) {
-
-				//칸에 물고기기 있고, 먹을 수 있을때
-				if (d[i][j] > 0 && d[i][j] < cur_size) {
-
-					//먹을 수 있는 물고기까지의 거리
-					int dist = check[i][j];
-
-					//단, 먹을 수 있는 물고기이지만, 큰 물고기에게 둘러쌓여 그 물고기한테 못 갈 수 있다.
-					//갈 수 없는 경우에는 넣지 않는다.
-					if (dist > 0) v.push_back({ i, j, dist });
-				}
-			}
-		}
-
-
-		//4. 상어 이동
-		int fish_cnt = (int)v.size();
-
-		//1) 먹을 수 있는 물고기가 없다면 종료
-		if (fish_cnt == 0) {
-			break;
-		}
-		else {
-
-			//2) 먹을 수 있는 물고기가 1마리보다 많을때
-			if (fish_cnt > 1) sort(v.begin(), v.end(), cmp);
-
-			int nx = v[0].x;
-			int ny = v[0].y;
-			int move_time = v[0].dist;
-
-			//상어 크기 업데이트
-			cur_eat++;
-			if (cur_eat == cur_size) {
-				cur_eat = 0;
-				cur_size++;
-			}
-
-			//상어의 위치 업데이트
-			cur_x = nx;
-			cur_y = ny;
-
-			//지도 변경
-			d[nx][ny] = 0;
-
-			//물고지 정보 초기화
-			v.clear();
-
-			//체크 배열 초기화
-			memset(check, 0, sizeof(check));
-
-			//시간 업데이트
-			result += move_time;
-		}
-	}
-	printf("%d\n", result);
-
+	solve();
+	return 0;
 }
-//
-//#include <iostream>
-//#include <vector>
-//using namespace std;
-//
-//// 전역으로 선언해 주었다. 재귀로 현재 위치에서 가장 가까운 먹이를 찾을때 재귀를 이용하는데, 
-//// 
-//int arr[20][20];
-//int cur_weight = 2;
-//int eat = 0;
-//int cur_x, cur_y;
-//int clock = 0;//잡아 먹을 수 있는 시간 카운트 한다.
-//int meet_nearest_feed(int cur_yy, int cur_xx, int N) {
-//	if (arr[cur_yy][cur_xx] != 0 && arr[cur_yy][cur_xx] <= cur_weight) {
-//		cur_y = cur_yy; cur_x = cur_xx; return clock; //현재 위치에서 가장 가까운 먹이를 찾으면 위치 기억하면서 종료 
-//	}
-//	// N*N을 넘어가는 것에 주의, 우선 순위에 따라 이동.
-//	if (cur_yy - 1 >=0 && arr[cur_yy - 1][cur_xx] !=0 && arr[cur_yy - 1][cur_xx] <= cur_weight) {
-//		if (arr[cur_yy - 1][cur_xx] == cur_weight) cur_weight++;
-//		cur_y = cur_yy; cur_x = cur_xx; return clock; } //1 
-//	if (cur_xx - 1>=0 && arr[cur_yy][cur_xx - 1]!=0 && arr[cur_yy][cur_xx - 1] <= cur_weight) {
-//		if (arr[cur_yy][cur_xx - 1] == cur_weight) cur_weight++;
-//		cur_y = cur_yy; cur_x = cur_xx; return clock; } //2 
-//	if (cur_xx + 1<N && arr[cur_yy][cur_xx + 1]!=0 && arr[cur_yy][cur_xx + 1] <= cur_weight) {
-//		if (arr[cur_yy][cur_xx + 1] == cur_weight) cur_weight++;
-//		cur_y = cur_yy; cur_x = cur_xx; return clock; } //3 
-//	if (cur_yy + 1<N && arr[cur_yy + 1][cur_xx]!=0 && arr[cur_yy + 1][cur_xx] <= cur_weight) {
-//		if (arr[cur_yy + 1][cur_xx] == cur_weight) cur_weight++;
-//		cur_y = cur_yy; cur_x = cur_xx; return clock; } //4 
-//	//if (cur_yy - 1 >=0 && cur_xx - 1 >=0 && arr[cur_yy - 1][cur_xx - 1]!=0 && arr[cur_yy - 1][cur_xx - 1] <= cur_weight) {
-//	//	if (arr[cur_yy - 1][cur_xx - 1] == cur_weight) cur_weight++;
-//	//	cur_y = cur_yy; cur_x = cur_xx; return; }//5 
-//	//if (cur_yy - 1 >=0 && cur_xx + 1 <N && arr[cur_yy - 1][cur_xx + 1]!=0 && arr[cur_yy - 1][cur_xx + 1] <= cur_weight) {
-//	//	if (arr[cur_yy - 1][cur_xx + 1] == cur_weight) cur_weight++;
-//	//	cur_y = cur_yy; cur_x = cur_xx; return; }//6 
-//	//if (cur_xx - 1 >= 0 && cur_yy + 1 <N && arr[cur_yy + 1][cur_xx - 1]!=0 && arr[cur_yy + 1][cur_xx - 1] <= cur_weight) {
-//	//	if (arr[cur_yy + 1][cur_xx - 1] == cur_weight) cur_weight++;
-//	//	cur_y = cur_yy; cur_x = cur_xx; return; }//7 
-//	//if (cur_yy + 1 <N && cur_xx + 1<N && arr[cur_yy + 1][cur_xx + 1]!=0 && arr[cur_yy + 1][cur_xx + 1] <= cur_weight) {
-//	//	if (arr[cur_yy + 1][cur_xx + 1] == cur_weight) cur_weight++;
-//	//	cur_y = cur_yy; cur_x = cur_xx; return; }//8 
-//
-//	// 2번 이동 까지는 현재 위치에서 검사한다. 
-//	clock++;
-//
-//	if(cur_yy - 1 >= 0)
-//		meet_nearest_feed(--cur_yy, cur_xx,N);
-//	if(cur_xx - 1 >= 0)
-//		meet_nearest_feed(cur_yy, --cur_xx,N);
-//	if(cur_yy + 1 < N)
-//		meet_nearest_feed(++cur_yy, cur_xx, N);
-//	if (cur_xx + 1 < N)
-//		meet_nearest_feed(cur_yy, ++cur_xx, N);
-//}
-//int main() {
-//	int N;
-//	freopen("input.txt", "r", stdin);
-//	cin >> N;
-//
-//	for (int i = 0; i < N; i++) {
-//		for (int j = 0; j < N; j++) {
-//			cin >> arr[i][j];
-//		}
-//	}
-// 
-//	for (int i = 0; i < N; i++) {
-//		for (int j = 0; j < N; j++) {
-//			if (arr[i][j] == 9) {
-//				cur_y = i;
-//				cur_x = j;
-//			}
-//		}
-//	}
-//	 
-//	int sum = 0;
-//	while (1) {
-//		//종료 조건
-//		for (int i = 0; i < N; i++) {
-//			for (int j = 0; j < N; j++) {
-//				sum += arr[i][j];
-//			}
-//		}
-//		if (sum == 9) {
-//			return clock;
-//		}
-//
-//		meet_nearest_feed(cur_y, cur_x,N);
-//		cur_x = 0; cur_y = 0; //먹이를 먹으면 0으로 바꾼다. 
-//
-//	}
-//}

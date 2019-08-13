@@ -1,70 +1,132 @@
-#define	_CRT_SECURE_NO_WARNINGS
-#include <iostream>
-#include <string>
-#include <vector>
-#include <stack>
-#include <queue>
-using namespace std;
+//#define	_CRT_SECURE_NO_WARNINGS
+//#include <iostream>
+//#include <string>
+//#include <vector>
+//#include <stack>
+//#include <queue>
+//using namespace std;
+//
+//int main(void)
+//{
+//	ios_base::sync_with_stdio(false);
+//	cin.tie(NULL); cout.tie(NULL);
+//	int N;
+//	int Answer = 0;
 
-int main(void)
-{
-	int N;
-	int Answer = 0;
-	//freopen("input.txt", "r", stdin);
-	cin >> N;
+//	//freopen("input.txt", "r", stdin);
+//	cin >> N;
+//
+//
+//	return 0;
+//
+//}
 
 
-	return 0;
+//#include <iostream>
+//#include <algorithm>
+//#include <vector>
+//using namespace std;
+//
+////int op[4];//+, -, *, /
+//int num[12];
+//vector<char> op2;
+//
+//int main(void)
+//{
+//	ios_base::sync_with_stdio(false); cin.tie(0);
+//	int T, test_case;
+//
+//	freopen("input.txt", "r", stdin);
+//	setbuf(stdout, NULL);
+//
+//	scanf("%d", &T);
+//	for (test_case = 0; test_case < T; test_case++)
+//	{
+//		int Answer = 0;
+//		int n; cin >> n;
+//		op2.clear();
+//
+//
+//
+//		for (int i = 0; i < 4; i++) {
+//			int num;
+//			cin >> num;
+//			if (i == 0) { while (num--) op2.push_back('+'); }
+//			if (i == 1) { while (num--) op2.push_back('-'); }
+//			if (i == 2) { while (num--) op2.push_back('*'); }
+//			if (i == 3) { while (num--) op2.push_back('/'); }
+//		}
+//
+//		memset(num, 0, sizeof(num));
+//		for (int i = 0; i < n; i++) {
+//			cin >> num[i];
+//		}
+//
+//		int sum;
+//		int _min = 100000000;
+//		int _max = -100000000;
+//		do {
+//		 	sum = 0;
+//		/*	for (int i = 0; i < op2.size(); i++) {
+//				cout << op2[i] << ' ';
+//			}*/
+//			//cout << endl;
+//			for (int i = 0; i < op2.size(); i++) {
+//				if (op2[i] == '+') {
+//					if(i==0) sum += num[i] + num[i+1];
+//					else sum += num[i+1];
+//				}
+//				else if (op2[i] == '-') {
+//					if(i==0) sum += num[i] - num[i + 1];
+//					else sum -= num[i+1];
+//				}
+//				else if (op2[i] == '*') {
+//					if(i==0) sum += num[i] * num[i + 1];
+//					else sum *= num[i+1];
+//				}
+//				else { //'/'
+//					if(i==0) sum += num[i] / num[i + 1];
+//					else sum /= num[i+1];
+//				}
+//			}
+//			if (sum > _max)
+//				_max = sum;
+//			if (sum < _min)
+//				_min = sum;
+//			cout << "Max: " << _max << " " << "Min: " << _min << endl;
+//		} while (next_permutation(op2.begin(), op2.end()));
+//
+//		printf("#%d ", test_case + 1);
+//		printf("%d\n", _max - _min);
+//	}
+//
+//	return 0;
+//
+//}
 
-}
-
-#define	_CRT_SECURE_NO_WARNINGS
-#include <iostream>
-using namespace std;
-
-int main(void)
-{
-	ios_base::sync_with_stdio(false); cin.tie(0);
-	int T, test_case;
-
-	freopen("input.txt", "r", stdin);
-	setbuf(stdout, NULL);
-
-	scanf("%d", &T);
-	for (test_case = 0; test_case < T; test_case++)
-	{
-		int Answer = 0;
-
-		printf("#%d ", test_case + 1);
-		printf("%d\n", Answer);
-	}
-
-	return 0;
-
-}
-
-#define	_CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-
-int main(void)
-{
-	int N, Answer = 0;
-	setbuf(stdout, NULL);
-	freopen("input.txt", "r", stdin);
-	setbuf(stdout, NULL);
-
-	int arr[100000] = { 0 };
-	scanf("%d\n", &N);
-
-	for (int i = 0; i < N; i++)
-	{
-		scanf("%d ", arr[i]);
-	}
-
-	printf("%d\n", Answer);
-	return 0;
-
-}
+//#define	_CRT_SECURE_NO_WARNINGS
+//#include <stdio.h>
+//
+//int main(void)
+//{
+//  ios_base::sync_with_stdio(false); cin.tie(0);
+//	int N, Answer = 0;
+//	setbuf(stdout, NULL);
+//	freopen("input.txt", "r", stdin);
+//	setbuf(stdout, NULL);
+//
+//	int arr[100000] = { 0 };
+//	scanf("%d\n", &N);
+//
+//	for (int i = 0; i < N; i++)
+//	{
+//		scanf("%d ", arr[i]);
+//	}
+//
+//	printf("%d\n", Answer);
+//	return 0;
+//
+//}
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 // 기본 제공코드는 임의 수정해도 관계 없습니다. 단, 입출력 포맷 주의
@@ -97,38 +159,5 @@ int main(void)
 // printf("%s", var);                    // 문자열 1개 출력하는 예제
 // printf("%lld", AB);                   // long long 변수 1개 출력하는 예제
 /////////////////////////////////////////////////////////////////////////////////////////////
-#include <stdio.h>
-int main(void)
-{
-	int test_case;
-	int T;
-	/* 아래의 freopen 함수는 input.txt 를 read only 형식으로 연 후,
-	앞으로 표준 입력(키보드) 대신 input.txt 파일로부터 읽어오겠다는 의미의 코드입니다.
-	여러분이 작성한 코드를 테스트 할 때, 편의를 위해서 input.txt에 입력을 저장한 후,
-	freopen 함수를 이용하면 이후 scanf 를 수행할 때 표준 입력 대신 파일로부터 입력을 받아올 수 있습니다.
-	따라서 테스트를 수행할 때에는 아래 주석을 지우고 이 함수를 사용하셔도 좋습니다.
-	단, 채점을 위해 코드를 제출하실 때에는 반드시 freopen 함수를 지우거나 주석 처리 하셔야 합니다.
-	*/
-	// freopen("input.txt", "r", stdin);
-	/* 아래 코드를 수행하지 않으면 여러분의 프로그램이 제한 시간 초과로 강제 종료 되었을 때,
-	출력한 내용이 실제 표준 출력에 기록되지 않을 수 있습니다.
-	따라서 안전을 위해 반드시 setbuf(stdout, NULL); 을 수행하시기 바랍니다.
-	*/
-	setbuf(stdout, NULL);
-	scanf("%d", &T);
-	/*
-	여러 개의 테스트 케이스를 처리하기 위한 부분입니다.
-	*/
-	for (test_case = 1; test_case <= T; ++test_case)
-	{
-		/////////////////////////////////////////////////////////////////////////////////////////////
-		/*
-		이 부분에 여러분의 알고리즘 구현이 들어갑니다.
-		*/
-		/////////////////////////////////////////////////////////////////////////////////////////////
-
-	}
-	return 0; //정상종료시 반드시 0을 리턴해야 합니다.
-}
 
 

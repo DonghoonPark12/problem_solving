@@ -112,7 +112,7 @@ int main() {
 
 
 //#include<stdio.h>
-//int N, M, x, y, m, max;
+//int N, M, x, y, m, _max;
 //int map[40][40], visit[40], st[40], top = -1, ans[40], at;
 //struct aa {
 //	char q[5];
@@ -135,8 +135,8 @@ int main() {
 //	}
 //	if (m == M) {
 //		if (map[now][1] + d <= 540) {
-//			if (max < s) {
-//				max = s;
+//			if (_max < s) {
+//				_max = s;
 //				for (i = 0; i <= top; i++) ans[i] = st[i];
 //				at = top;
 //			}
@@ -179,11 +179,11 @@ int main() {
 //				x++;
 //			}
 //		}
-//		max = 0;
+//		_max = 0;
 //		m = 1;
 //		dfs(1, 0, 0);
-//		printf("#%d %d ", i, max);
-//		if (max != 0) {
+//		printf("#%d %d ", i, _max);
+//		if (_max != 0) {
 //			for (j = 0; j <= at; j++) printf("%d ", ans[j]);
 //			printf("1");
 //		}

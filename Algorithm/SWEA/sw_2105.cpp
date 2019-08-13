@@ -27,8 +27,8 @@
 //				scanf(" %d", &arr[i][j]);
 //			}
 //		}
-//		int max_cnt = 0;
-//		int max = 0;
+//		int _max_cnt = 0;
+//		int _max = 0;
 //		int cnt = 0;
 //		int str_x, str_y;
 //		int cur_x, cur_y;
@@ -121,9 +121,9 @@
 //					if ((cur_x == str_x) && (cur_y == str_y)) break;
 //				}
 //				if (str_x == cur_x && str_y == cur_y) {
-//					if (cnt > max_cnt)
-//						max_cnt = cnt;
-//					cout << max_cnt;
+//					if (cnt > _max_cnt)
+//						_max_cnt = cnt;
+//					cout << _max_cnt;
 //				}
 //
 //				cout << "\n";
@@ -132,7 +132,7 @@
 //
 //		/////////////////////////////////////////////////////////////////////////////////////////////////
 //		printf("#%d ", test_case + 1);
-//		printf("%d\n", max_cnt);
+//		printf("%d\n", _max_cnt);
 //	}
 //
 //	return 0;
