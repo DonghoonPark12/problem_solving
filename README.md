@@ -1,11 +1,11 @@
-**Daily problem solving**
+  
+## Daily problem solving
 ---
 [SWExpertAcademy](https://swexpertacademy.com/main/main.do)  
 [BaekJoon](https://www.acmicpc.net/)  
 [Hackerrank](https://www.hackerrank.com/dashboard)
   
- **Operating System**
- 
+ ## Operating System
  ---
  
 ---
