@@ -1,6 +1,4 @@
-### Programming Language  
-  
-### Data Structure  
+### Basic 
   
 
 ### Daily problem solving
