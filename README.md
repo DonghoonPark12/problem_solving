@@ -1,6 +1,3 @@
-### Basic 
-  
-
 ### Daily problem solving
 
 [Algospot](https://algospot.com/)  
