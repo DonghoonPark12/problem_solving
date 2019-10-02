@@ -1,0 +1,18 @@
+OS abstractions, mechanisms, and polices for:
+- processes and process management
+- threads and concurrency
+- resource management: scheduling, memory management
+- OS services for communication and I/O
+- OS support for distributed services
+- System software for data center and cloud environment
+
+Theory + Practice
+
+Sequence of Programming Projects:
+- threads, concurrency, and synchronization
+- single-node os mechanisms
+  : inter-process communication, scheduling...
+- multi-node os mechanisms
+  : remote procedure calls(RPC)..
+- experimented design and evaluation
+

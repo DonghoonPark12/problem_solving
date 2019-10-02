@@ -79,32 +79,3 @@ using namespace std;
 
 
 
-/*
-struct Person {    // 구조체 정의
-char name[20];        // 구조체 멤버 1
-int age;              // 구조체 멤버 2
-char address[100];    // 구조체 멤버 3
-} p1;              // 구조체 정의와 동시에 선언이다.
-*/
-
-
-//int map[503][503];
-//int n, m;
-//
-//const char block[19][4][5]{
-//	{
-//
-//	},
-//	{
-//
-//	}, 
-//	{
-//
-//	},
-//
-//}
-//
-//int main() {
-//	 
-//	return 0;
-//}
