@@ -10,6 +10,8 @@
 *.DS_Store
 *Algorithm.sln
 *.vscode
+input.txt
+*.vcxproject*
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
