@@ -290,9 +290,6 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일\Ex3 클래스와 객체\파일분할</Filter>
     </ClCompile>
-    <ClCompile Include="tailgame+.cpp">
-      <Filter>소스 파일\Ex4 객체포인터와 객체배열, 객체의 동적생성</Filter>
-    </ClCompile>
     <ClCompile Include="4_10.cpp">
       <Filter>소스 파일\Ex4 객체포인터와 객체배열, 객체의 동적생성</Filter>
     </ClCompile>
