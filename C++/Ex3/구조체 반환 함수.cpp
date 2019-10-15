@@ -1,5 +1,5 @@
-#include <stdio.h>
-
+#include <cstdio>
+#include <stdlib.h>
 typedef struct point
 {
 	int x;

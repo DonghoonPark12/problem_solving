@@ -9,48 +9,31 @@ using namespace std;
 	4. 현재 것과 (이전 것 + 현재 것 합) 비교해서 최대를 dp[i]에 넣는다. 
 	5. 동시에 result와 dp[i]를 비교해서 최대 값을 result에 넣는다.
 */
-//int arr[100000];
-//int main() {
-//	int n; cin >> n;
-//	int cnt = 0;
-//	for (int i = 0; i < n; i++) {
-//		cin >> arr[i];
-//		if (arr[i] < 0)
-//			cnt++;
-//	}
-//	if (cnt == n) {
-//		sort(arr, arr + n);
-//		cout << arr[n-1];
-//		return 0;
-//	}
-//
-//	int _max = 0;
-//	int sum = 0;
-//	for (int i = 0; i < n; i++) {
-//		if (arr[i] > 0)
-//			sum += arr[i];
-//		else {
-//			_max = max(_max, sum);
-//			sum = 0;
-//		}
-//	}
-//	cout << _max;
-//	return 0;
-//}
-
-int main()
-{
-	int n, result, dp[100000] = { 0 };
-
-	cin >> n;
-
-	for (int i = 0; i < n; i++) cin >> dp[i];
-
-	result = dp[0];
-	for (int i = 1; i < n; i++)
-	{
-		dp[i] = max(dp[i], dp[i] + dp[i - 1]);
-		result = max(result, dp[i]); //문제의부분.
+int arr[100000];
+int main() {
+	int n; cin >> n;
+	int cnt = 0;
+	for (int i = 0; i < n; i++) {
+		cin >> arr[i];
+		if (arr[i] < 0)
+			cnt++;
 	}
-	cout << result << "\n";
+	if (cnt == n) {
+		sort(arr, arr + n);
+		cout << arr[n - 1];
+		return 0;
+	}
+
+	int _max = 0;
+	int sum = 0;
+	for (int i = 0; i < n; i++) {
+		if (arr[i] > 0)
+			sum += arr[i];
+		else {
+			_max = max(_max, sum);
+			sum = 0;
+		}
+	}
+	cout << _max;
+	return 0;
 }
