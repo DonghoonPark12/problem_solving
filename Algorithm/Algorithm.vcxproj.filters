@@ -369,6 +369,12 @@
     <ClCompile Include="MOBIS\1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="DS\9.  PriorityQueue_Heap\UsefulHeap.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DS\9.  PriorityQueue_Heap\UsefulHeapMain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
@@ -386,6 +392,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="DS\AVLRebalance.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DS\9.  PriorityQueue_Heap\UsefulHeap.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

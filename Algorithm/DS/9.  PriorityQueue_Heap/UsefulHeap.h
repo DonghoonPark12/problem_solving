@@ -1,5 +1,5 @@
-#ifndef __SIMPLE_HEAP_H__
-#define __SIMPLE_HEAP_H__
+#ifndef __USEFUL_HEAP_H__
+#define __USEFUL_HEAP_H__
 
 #define True 1
 #define False 0

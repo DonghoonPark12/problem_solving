@@ -1,4 +1,4 @@
-#include "SimpleHeap_rev.h"
+#include "UsefulHeap.h"
 
 void HeapInit(Heap *ph, PriorityComp pc){
     ph->numOfData = 0;
