@@ -1,10 +1,11 @@
+/* 명품 c++ 5.5문제 */
 #include "Stack.h"
 #include <iostream>
 using namespace std;
 
 int main() {
 	// 1)
-/*	MyIntStack a;
+	MyIntStack a;
 	for (int i = 0; i < 11; i++) {
 		if (a.push(i)) cout << i << ' ';
 		else cout << endl << i + 1 << " 번째 stack full" << endl;
@@ -14,7 +15,7 @@ int main() {
 		if (a.pop(n)) cout << n << ' ';
 		else cout << endl << i + 1 << " 번째 stack empty";
 	}
-	cout << endl*/;
+	cout << endl;
 
 	// 2)
 	MyIntStack a(10);

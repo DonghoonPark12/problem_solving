@@ -1,5 +1,20 @@
+/* 명품 c++ 5.8문제 */
 #define _CRT_SECURE_NO_WARNINGS
-#include "BookClass.h"
+
+#include <iostream>
+using namespace std;
+class Book {
+	char *title;
+	int  price;
+public:
+	Book(char *title, int price);
+	Book(Book &book);
+	~Book();
+	void set(char *title, int price);
+	void show() { cout << title << ' ' << price << "원" << endl; }
+
+};
+
 /*
 * 에러가 안생기는데??? 디폴트 복사 생성자가 호출되도 문자열이 따로 분리된다.
 *
