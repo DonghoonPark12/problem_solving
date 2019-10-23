@@ -5,7 +5,8 @@
   
  ### Operating System
 [Udacity Operating System Intermediate](https://www.udacity.com/course/introduction-to-operating-systems--ud923)  
-[Coursera Operating System](https://www.coursera.org/learn/os-power-user?#syllabus)
+[Coursera Operating System](https://www.coursera.org/learn/os-power-user?#syllabus)  
+[KU Prof.최린 운영체제](https://www.youtube.com/playlist?list=PLL3t9Nt4HrftMbghYQIDA5wsC1BmzgWnc)  
   
  ### Advanced C++  
 [Optimizing C++/Writing efficient code/Performance improving features.](https://en.wikibooks.org/wiki/Optimizing_C%2B%2B/Writing_efficient_code/Performance_improving_features)  
