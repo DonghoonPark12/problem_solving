@@ -16,4 +16,4 @@
 ### Computer Architecture
 [Coursera Computer Architecture](https://www.coursera.org/learn/comparch/home/welcome)  
 [Udacity Computer Architecture](https://classroom.udacity.com/courses/ud007)  
- 
+[KU Prof.최린 Computer Architecture](https://www.youtube.com/playlist?list=PLOh92BQ5xeWmzUiLJ6k4_GOdiH_SCTuTZ)
