@@ -27,25 +27,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Account.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="AccountArray.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="AccountHandler.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="BankingCommonDecl.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
     <ClInclude Include="BookClass.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="FruitsBuyer.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="FruitsSeller.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
     <ClInclude Include="HighCreditAccount.h">
@@ -57,16 +39,7 @@
     <ClInclude Include="namespace.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
-    <ClInclude Include="NormalAccount.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Ram.h">
-      <Filter>소스 파일\Ex3 클래스와 객체</Filter>
-    </ClInclude>
-    <ClInclude Include="Rectangle.h">
-      <Filter>소스 파일\Ex3 클래스와 객체</Filter>
-    </ClInclude>
-    <ClInclude Include="Point.h">
       <Filter>소스 파일\Ex3 클래스와 객체</Filter>
     </ClInclude>
     <ClInclude Include="Circle.h">
@@ -81,36 +54,51 @@
     <ClInclude Include="NameCard.h">
       <Filter>소스 파일\Ex5 함수와 참조, 복사 생성자</Filter>
     </ClInclude>
-    <ClInclude Include="6.friend와 staric 그리고 const\OOP수업\Employee.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="6.friend와 staric 그리고 const\OOP수업\Date.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="6.friend와 staric 그리고 const\OOP수업\Employee.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="6.friend와 staric 그리고 const\OOP수업\hw_Date.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="OOP_Project\AccountHandler.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="OOP_Project\AccountArray.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="OOP_Project\Account.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="4.클래스의 완성\miscelleneous\FruitsBuyer.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="4.클래스의 완성\miscelleneous\FruitsSeller.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="4.클래스의 완성\miscelleneous\Point.h">
+      <Filter>소스 파일\Ex3 클래스와 객체</Filter>
+    </ClInclude>
+    <ClInclude Include="4.클래스의 완성\miscelleneous\Rectangle.h">
+      <Filter>소스 파일\Ex3 클래스와 객체</Filter>
+    </ClInclude>
+    <ClInclude Include="OOP_Project\BankingCommonDecl.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="OOP_Project\NormalAccount.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Account.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="AccountArray.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="AccountHandler.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Accumulator.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="BankingSystemMain.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="c_Ex.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="ConsoleOutput.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Destructor.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="EmployeeManager1.cpp">
@@ -131,12 +119,6 @@
     <ClCompile Include="File.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="FirstOperationOverloading.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="FruitScleSlim1.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Function in  Struct.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -150,9 +132,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Generic.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="GFunctionOverloading.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Graph.c">
@@ -203,25 +182,10 @@
     <ClCompile Include="ObjectPointer.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="OneOpndOverloading.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="OOP1.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="PointConsoleOutput.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="PointerThiscpp.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="PointMultipleOperation.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="PostOpndOverloading.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="PublicStaticMember.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="reference.cpp">
@@ -233,22 +197,13 @@
     <ClCompile Include="RefReturnOne.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="SelfRef.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="StableConstArraySolu.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="StablePointPtrArray.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="StaticMember.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="struct_LinkedList.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Template.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Test_LinkedList.c">
@@ -266,20 +221,11 @@
     <ClCompile Include="Ram_main.cpp">
       <Filter>소스 파일\Ex3 클래스와 객체</Filter>
     </ClCompile>
-    <ClCompile Include="Rectangle.cpp">
-      <Filter>소스 파일\Ex3 클래스와 객체</Filter>
-    </ClCompile>
     <ClCompile Include="Rect_main.cpp">
-      <Filter>소스 파일\Ex3 클래스와 객체</Filter>
-    </ClCompile>
-    <ClCompile Include="Point.cpp">
       <Filter>소스 파일\Ex3 클래스와 객체</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일\Ex3 클래스와 객체\파일분할</Filter>
-    </ClCompile>
-    <ClCompile Include="Jogyo3.cpp">
-      <Filter>소스 파일\Ex3 클래스와 객체</Filter>
     </ClCompile>
     <ClCompile Include="NameCard.cpp">
       <Filter>소스 파일\Ex5 함수와 참조, 복사 생성자</Filter>
@@ -308,27 +254,6 @@
     <ClCompile Include="6.friend와 staric 그리고 const\NeedGlobal.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="6.friend와 staric 그리고 const\OOP수업\this.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="6.friend와 staric 그리고 const\OOP수업\week6_HW.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="6.friend와 staric 그리고 const\OOP수업\friend.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="6.friend와 staric 그리고 const\OOP수업\Employee_main.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="6.friend와 staric 그리고 const\OOP수업\Employee.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="6.friend와 staric 그리고 const\OOP수업\Date_main.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="6.friend와 staric 그리고 const\OOP수업\Date.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="5.복사 생성자%28CopyConstructor%29\5_5.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -338,7 +263,85 @@
     <ClCompile Include="5.복사 생성자%28CopyConstructor%29\5_8.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="6.friend와 staric 그리고 const\OOP수업\week7.cpp">
+    <ClCompile Include="6.friend와 staric 그리고 const\OOP수업\Date.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6.friend와 staric 그리고 const\OOP수업\Date_main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6.friend와 staric 그리고 const\OOP수업\Employee.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6.friend와 staric 그리고 const\OOP수업\Employee_main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6.friend와 staric 그리고 const\OOP수업\friend.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6.friend와 staric 그리고 const\OOP수업\hw_main6.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6.friend와 staric 그리고 const\OOP수업\hw_Date.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10.연산자오버로딩1\FirstOperationOverloading.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10.연산자오버로딩1\GFunctionOverloading.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10.연산자오버로딩1\OneOpndOverloading.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10.연산자오버로딩1\PostOpndOverloading.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="13.템플릿%28Template%291\Template.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="4.클래스의 완성\SelfRef.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="4.클래스의 완성\PointerThiscpp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="4.클래스의 완성\Destructor.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="OOP_Project\BankingSystemMain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="OOP_Project\AccountHandler.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="OOP_Project\AccountArray.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="OOP_Project\Account.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="4.클래스의 완성\miscelleneous\FruitScleSlim1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="4.클래스의 완성\miscelleneous\Point.cpp">
+      <Filter>소스 파일\Ex3 클래스와 객체</Filter>
+    </ClCompile>
+    <ClCompile Include="4.클래스의 완성\miscelleneous\Rectangle.cpp">
+      <Filter>소스 파일\Ex3 클래스와 객체</Filter>
+    </ClCompile>
+    <ClCompile Include="5.복사 생성자(CopyConstructor)\ReturnObjCopyCon.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="5.복사 생성자(CopyConstructor)\PassObjCopycon.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="OOP_Project\OOP1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6.friend와 staric 그리고 const\PublicStaticMember.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6.friend와 staric 그리고 const\StaticMember.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

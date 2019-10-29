@@ -1,0 +1,7 @@
+﻿C# 컴파일러는 따로 존재.
+
+CLR : 중간 언어를 통한 다중 언어 지원
+      C#코드를 컴파일하면 IL(Intermediate Language)파일이 만들어지는데,
+	  IL 파일을 네이티브(?) 코드로 컴파일 해주는 것이 CLR역할(JIT라 부른다.)
+
+	  https://guslabview.tistory.com/185

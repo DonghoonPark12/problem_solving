@@ -1,0 +1,1 @@
+//https://www.acmicpc.net/source/share/32a037ff0b84435bb54a88937003110d

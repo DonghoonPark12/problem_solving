@@ -63,12 +63,6 @@
     <ClCompile Include="SWEA\sw_1824.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="DS\bfs_graph.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DS\bfs_tree.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="SWEA\sw_2112.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -91,9 +85,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="SWEA\sw_4013.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DS\BinarySearch.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="SWEA\sw_1953.cpp">
@@ -123,9 +114,6 @@
     <ClCompile Include="SWEA\sw_1952.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ\LCM_GCD.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ\1699.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -133,18 +121,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="BOJ\dp_tiling.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DS\Search.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DS\BinarySearchTree.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DS\BinarySearchTreeMain.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DS\BinaryTree3.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="BOJ\2302.cpp">
@@ -171,9 +147,6 @@
     <ClCompile Include="CGR\Qual1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="DS\AVLRebalance.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ\15685.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -184,9 +157,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="BOJ\15686.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="BOJ\combi_permu.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="BOJ\6588.cpp">
@@ -268,12 +238,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="SWEA\암호문3.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DS\stl_basic_C++11_rev3.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DS\우선 순위 큐_rev1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="BOJ\3055.cpp">
@@ -369,10 +333,10 @@
     <ClCompile Include="MOBIS\1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="DS\9.  PriorityQueue_Heap\UsefulHeap.cpp">
+    <ClCompile Include="BOJ\수학\LCM_GCD.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="DS\9.  PriorityQueue_Heap\UsefulHeapMain.cpp">
+    <ClCompile Include="BOJ\수학\combi_permu.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -380,22 +344,5 @@
     <Text Include="input.txt">
       <Filter>리소스 파일</Filter>
     </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="DS\bfs_tree.py" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="DS\BinarySearchTree.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="DS\BinaryTree3.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="DS\AVLRebalance.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="DS\9.  PriorityQueue_Heap\UsefulHeap.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

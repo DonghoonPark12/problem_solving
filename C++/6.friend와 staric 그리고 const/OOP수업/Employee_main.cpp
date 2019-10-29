@@ -30,7 +30,6 @@ int main() {
 
 	cout << "Number of Employee after object allocation" << e1Ptr->getCount();
 
-	e1Ptr.
 	delete e1Ptr;
 	e1Ptr = 0;
 	delete e2Ptr;
