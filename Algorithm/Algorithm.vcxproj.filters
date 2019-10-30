@@ -90,9 +90,6 @@
     <ClCompile Include="SWEA\sw_1953.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="SWEA\tmp.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="SWEA\sw_4014.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -337,6 +334,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="BOJ\수학\combi_permu.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWEA\1234.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
