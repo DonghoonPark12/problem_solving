@@ -5,9 +5,18 @@
 using namespace std;
 
 int solution(string pos) {
-    // 여기에 코드를 작성해주세요.
-    int answer = 0;
-    return answer;
+	int dx[] = { 1,1,-1,-1,2,2,-2,-2 };//{1, 2, 2, 1,-1,-2, -2, -1};
+	int dy[] = { 2,-2,-2,2,1,-1,-1,1 };//{2, 1,-1,-2,-2,-1, 1, 2};
+	int cx = pos[0] - 'A';
+	int cy = pos[1] - '0' - 1;
+	int ans = 0;
+	for (int i = 0; i < 8; ++i) {
+		int nx = cx + dx[i];
+		int ny = cy + dy[i];
+		if (nx >= 0 && nx < 8 && ny >= 0 && ny < 8)
+			ans++;
+	}
+	return ans;
 }
 
 // 아래는 테스트케이스 출력을 해보기 위한 main 함수입니다.

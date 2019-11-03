@@ -31,29 +31,29 @@ vector<int> solution(int N, vector<int> votes) {
 }
 
 
-// ì•„ëž˜ëŠ” í…ŒìŠ¤íŠ¸ì¼€ì´ìŠ¤ ì¶œë ¥ì„ í•´ë³´ê¸° ìœ„í•œ main í•¨ìˆ˜ìž…ë‹ˆë‹¤. mainí•¨ìˆ˜ëŠ” ìž˜ëª»ëœ ë¶€ë¶„ì´ ì—†ìœ¼ë‹ˆ, solutioní•¨ìˆ˜ë§Œ ìˆ˜ì •í•˜ì„¸ìš”.
+// ¾Æ·¡´Â Å×½ºÆ®ÄÉÀÌ½º Ãâ·ÂÀ» ÇØº¸±â À§ÇÑ main ÇÔ¼öÀÔ´Ï´Ù. mainÇÔ¼ö´Â Àß¸øµÈ ºÎºÐÀÌ ¾øÀ¸´Ï, solutionÇÔ¼ö¸¸ ¼öÁ¤ÇÏ¼¼¿ä.
 int main() {
     int N1 = 5;
     vector<int> votes1 = {1,5,4,3,2,5,2,5,5,4};
     vector<int> ret1 = solution(N1, votes1);
 
-    // [ì‹¤í–‰] ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ ì¶œë ¥ ê°’ì„ ë³¼ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
-    cout << "solution í•¨ìˆ˜ì˜ ë°˜í™˜ ê°’ì€ {";
+    // [½ÇÇà] ¹öÆ°À» ´©¸£¸é Ãâ·Â °ªÀ» º¼ ¼ö ÀÖ½À´Ï´Ù.
+    cout << "solution ÇÔ¼öÀÇ ¹ÝÈ¯ °ªÀº {";
     for(int i = 0; i < ret1.size(); i++){
         if (i != 0) cout << ", ";
         cout << ret1[i];
     }
-    cout << "} ìž…ë‹ˆë‹¤." << endl;
+    cout << "} ÀÔ´Ï´Ù." << endl;
 
     int N2 = 4;
     vector<int> votes2 = {1,3,2,3,2};
     vector<int> ret2 = solution(N2, votes2);
 
-    // [ì‹¤í–‰] ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ ì¶œë ¥ ê°’ì„ ë³¼ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
-    cout << "solution í•¨ìˆ˜ì˜ ë°˜í™˜ ê°’ì€ {";
+    // [½ÇÇà] ¹öÆ°À» ´©¸£¸é Ãâ·Â °ªÀ» º¼ ¼ö ÀÖ½À´Ï´Ù.
+    cout << "solution ÇÔ¼öÀÇ ¹ÝÈ¯ °ªÀº {";
     for(int i = 0; i < ret2.size(); i++){
         if (i != 0) cout << ", ";
         cout << ret2[i];
     }
-    cout << "} ìž…ë‹ˆë‹¤." << endl;
+    cout << "} ÀÔ´Ï´Ù." << endl;
 }
