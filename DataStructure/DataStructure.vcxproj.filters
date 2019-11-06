@@ -15,16 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1_Stack\BOJ대표문제\17413.cpp">
+    <ClCompile Include="01_Stack\BOJ대표문제\17413.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="2_Queue_Deque\BOJ 대표문제\17298.cpp">
+    <ClCompile Include="02_Queue_Deque\BOJ 대표문제\17298.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="2_Queue_Deque\BOJ 대표문제\17299.cpp">
+    <ClCompile Include="02_Queue_Deque\BOJ 대표문제\17299.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="9_PriorityQueue_Heap\BOJ 대표문제\swea_heap.cpp">
+    <ClCompile Include="09_PriorityQueue_Heap\BOJ 대표문제\swea_heap.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="09_PriorityQueue_Heap\BOJ 대표문제\swea_heap_vector.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="소스.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

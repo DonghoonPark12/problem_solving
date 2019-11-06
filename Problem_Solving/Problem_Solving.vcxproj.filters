@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="[DP]X,Y입력(+1)(-1).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="8진수, 16진수, 10진수.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="16장.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithm.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="all_about_list.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="arctan2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="b1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="b2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="b3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bit.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bit_field.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="C++ Standard Function Call.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="C++ 동적할당.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DerivCreOrder.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Display_number.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DistanceEstimator.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Embedded.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Encode.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Equal Stacks.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Error.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Essential Function.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex_class.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Find_the_element_that_appears_once.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="gfg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="HanoiTowerSolu.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="If문 문제.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="isPangram.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="isPangram2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="KdTree.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="knapsack.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="knapsack_ex.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="knapsack2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Largest Rectangle.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LCS.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LCSubsequnce2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LRU_gfg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LRU_kakao.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LRU2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="maximum-element.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="n-gram.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="NQueens.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="N으로 표현.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Parameters Default Value.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="RGB 거리.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Task와 시그널.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_NQueens.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread_.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Tree.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="같은 번호 짝 소거하기.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="같은 번호 짝 소거하기_필사.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="계산기 프로그램.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="계산기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="계산기_예제.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="계산기_정석.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="계산기_필사.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="기능개발.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="길찾기_예제2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="다트게임.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="단어변환.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="배열회전.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="블럭 없애기_미해결.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="비밀지도.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="시각덧셈.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="안녕.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="안녕_예제.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="어디에 단어가 들어갈 수 있을까.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="영어 어휘 테스트 프로그램.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="이진수 표현.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="입력 받은 대로 출력.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="자연수 합 N의 경우의 수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="조교의성적매기기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="중간 평균값 구하기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="캐시.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="회문1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DistanceEstimator.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="NQueens.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Image Struct &amp; Allocation, Load" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input.txt" />
+    <Text Include="SystemSW(2)_Lecture_Summary.txt" />
+  </ItemGroup>
+</Project>
