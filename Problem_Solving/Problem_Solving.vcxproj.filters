@@ -78,9 +78,6 @@
     <ClCompile Include="Essential Function.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex_class.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Find_the_element_that_appears_once.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>

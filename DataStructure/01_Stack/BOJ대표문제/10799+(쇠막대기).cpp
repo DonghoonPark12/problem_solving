@@ -5,10 +5,7 @@
 int main(void)
 {
 	int N, Answer = 0;
-	freopen("input.txt", "r", stdin);
-	setbuf(stdout, NULL);
 
-	/////////////////////////////////////////////////////////////////////////////////////////////////
 	char str[100000] = { 0 };
 	scanf("%s\n", str);
 
@@ -27,12 +24,12 @@ int main(void)
 		}
 		if (str[i] == ')')
 		{
-			if (str[i - 1] == ')')
+			if (str[i - 1] == ')') //막대기의 끝
 			{
 				top--;
 				Answer += 1;
 			}
-			else
+			else                    //레이저의 발사
 			{
 				top--;
 				Answer += top;

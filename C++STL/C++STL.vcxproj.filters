@@ -15,6 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="7.Relation_Container\Text.txt" />
+    <Text Include="Text.txt" />
   </ItemGroup>
 </Project>
