@@ -1,4 +1,4 @@
-### How to be a good engineerer
+### how to be a good engineer
 ---
   
 #### 1. Problem Solving Ability : Daily problem solving
