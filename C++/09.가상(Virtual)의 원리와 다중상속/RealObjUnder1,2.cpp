@@ -12,6 +12,7 @@ public:
 	void Add(int num) { data += num; }
 };
 
+//클래스 Data를 흉내 낸 구조체
 typedef struct Data {
 	int data;
 	void(*ShowData)(Data *); //함수 포인터의 인자로 구조체 포인터를 받고 있다. 
@@ -29,7 +30,7 @@ int main() {
 
 	Data obj1 = { 15, ShowData, Add };
 	Data obj2 = { 7, ShowData, Add };
-	obj1.Add(&obj1, 17);
+	obj1.Add(&obj1, 17); //두개의 구조체(obj1, obj2)가 함수 Add, ShowData를 공유
 	obj2.Add(&obj2, 9);
 
 	obj1.ShowData(&obj1);

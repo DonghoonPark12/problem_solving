@@ -1,0 +1,21 @@
+Application of DFS
+1. Topological Sorting(I don't know yet) <----------------
+2. In maze, find path(O)
+
+
+Application of BFS
+1. Shortest Path(Hard), MST for unweighted graph. <----------------
+2. Peer to Peer Network(O)
+3. Crawlers in Search Engines(I don't know)
+4. Social Networking Websites(I can utilize)
+5. GPS Navigation System(O)
+6. Broadcasting in Network(O)
+7. In Garbage Collection    <-------------------
+   : BFS is used in copying garbage collection using Cheney's algorithm
+
+
+Both can be used 
+1. To test If a graph is bipartite(O)
+2. Path Finding(O)
+3. Detecting Cycle in a Graph(O)
+4. Ford-Fulkerson Algorithm(I don't know yet)

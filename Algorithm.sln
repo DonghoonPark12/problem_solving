@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenCV", "OpenCV\OpenCV.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QT_tuto", "QT_tuto\QT_tuto.vcxproj", "{B12702AD-ABFB-343A-A199-8E24837244A3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Parallel_programming", "Parallel_programming\Parallel_programming.vcxproj", "{2933B44B-4286-412C-AD25-05A551DCA7EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -181,6 +183,20 @@ Global
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x64.Build.0 = Release|x64
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x86.ActiveCfg = Release|Win32
 		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x86.Build.0 = Release|Win32
+		{2933B44B-4286-412C-AD25-05A551DCA7EB}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{2933B44B-4286-412C-AD25-05A551DCA7EB}.Debug|ARM.ActiveCfg = Debug|Win32
+		{2933B44B-4286-412C-AD25-05A551DCA7EB}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{2933B44B-4286-412C-AD25-05A551DCA7EB}.Debug|x64.ActiveCfg = Debug|x64
+		{2933B44B-4286-412C-AD25-05A551DCA7EB}.Debug|x64.Build.0 = Debug|x64
+		{2933B44B-4286-412C-AD25-05A551DCA7EB}.Debug|x86.ActiveCfg = Debug|Win32
+		{2933B44B-4286-412C-AD25-05A551DCA7EB}.Debug|x86.Build.0 = Debug|Win32
+		{2933B44B-4286-412C-AD25-05A551DCA7EB}.Release|Any CPU.ActiveCfg = Release|Win32
+		{2933B44B-4286-412C-AD25-05A551DCA7EB}.Release|ARM.ActiveCfg = Release|Win32
+		{2933B44B-4286-412C-AD25-05A551DCA7EB}.Release|ARM64.ActiveCfg = Release|Win32
+		{2933B44B-4286-412C-AD25-05A551DCA7EB}.Release|x64.ActiveCfg = Release|x64
+		{2933B44B-4286-412C-AD25-05A551DCA7EB}.Release|x64.Build.0 = Release|x64
+		{2933B44B-4286-412C-AD25-05A551DCA7EB}.Release|x86.ActiveCfg = Release|Win32
+		{2933B44B-4286-412C-AD25-05A551DCA7EB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,6 +10,21 @@ public:
 	int get();
 };
 
+Accumulator::Accumulator(int myvalue)
+	:value(myvalue)
+{ }
+
+Accumulator& Accumulator::add(int n)
+{
+	value += n;
+	return *this;
+}
+
+int Accumulator::get()
+{
+	return value;
+}
+
 
 int main() {
 	Accumulator acc(10);

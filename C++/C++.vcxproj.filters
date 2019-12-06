@@ -42,9 +42,6 @@
     <ClInclude Include="Ram.h">
       <Filter>소스 파일\Ex3 클래스와 객체</Filter>
     </ClInclude>
-    <ClInclude Include="Circle.h">
-      <Filter>소스 파일\Ex3 클래스와 객체\파일분할</Filter>
-    </ClInclude>
     <ClInclude Include="Point2.h">
       <Filter>소스 파일\Ex3 클래스와 객체\파일분할</Filter>
     </ClInclude>
@@ -90,14 +87,53 @@
     <ClInclude Include="06.friend와 staric 그리고 const\OOP수업\hw_Date.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="11.연산자오버로딩2\10week\Array.h">
+    <ClInclude Include="11.연산자오버로딩2\Week10_notice\Array.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="07.상속%28Inheritance%29의 이해\Week11_notice\BasePlusCommitionEmployee.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="07.상속%28Inheritance%29의 이해\Week11_notice\CommisionEmployee.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="09.가상(Virtual)의 원리와 다중상속\Week14_notice\Employee.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="09.가상(Virtual)의 원리와 다중상속\Week14_notice\SalariedEmployee.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="08.상속과 다형성\Week13_hw\TwoDimensionalShape.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="08.상속과 다형성\Week13_hw\Circle.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="08.상속과 다형성\Week13_hw\Cube.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="08.상속과 다형성\Week13_hw\Shape.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="08.상속과 다형성\Week13_hw\Sphere.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="08.상속과 다형성\Week13_hw\Square.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="08.상속과 다형성\Week13_hw\ThreeDimensionalShape.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="09.가상(Virtual)의 원리와 다중상속\Week14_notice\HourlyEmployee.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="09.가상(Virtual)의 원리와 다중상속\Week14_notice\CommisionEmployee.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="09.가상(Virtual)의 원리와 다중상속\Week14_notice\BasePlusCommitionEmployee.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Accumulator.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="c_Ex.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -140,12 +176,6 @@
     <ClCompile Include="HASComposite.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="inheritance.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="inheritance2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="inheritance3.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -174,9 +204,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="new_delete.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjectPointer.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="PointConsoleOutput.cpp">
@@ -365,17 +392,115 @@
     <ClCompile Include="11.연산자오버로딩2\StablePointPtrArray.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="11.연산자오버로딩2\10week\Array.cpp">
+    <ClCompile Include="07.상속%28Inheritance%29의 이해\ObjectPointer.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="11.연산자오버로딩2\10week\main.cpp">
+    <ClCompile Include="11.연산자오버로딩2\Week10_notice\Array.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="11.연산자오버로딩2\10week\week10_hw.cpp">
+    <ClCompile Include="11.연산자오버로딩2\Week10_notice\main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11.연산자오버로딩2\Week10_notice\week10_hw.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="07.상속%28Inheritance%29의 이해\Week11_notice\BasePlusCommitionEmployee.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="07.상속%28Inheritance%29의 이해\Week11_notice\CommisionEmployee.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="07.상속%28Inheritance%29의 이해\Week11_notice\main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="05.복사 생성자(CopyConstructor)\IKnowTempObj.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="07.상속%28Inheritance%29의 이해\inheritance.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="07.상속%28Inheritance%29의 이해\inheritance2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="08.상속과 다형성\EmployeeManager1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="07.상속(Inheritance)의 이해\Week11_notice\baseplus_main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="07.상속(Inheritance)의 이해\Week11_notice\driver.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="00.C_Review\volatile.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="00.C_Review\function_pointer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="09.가상(Virtual)의 원리와 다중상속\9_1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="09.가상(Virtual)의 원리와 다중상속\9_2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="07.상속%28Inheritance%29의 이해\Week11_notice\with_poly_main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="09.가상%28Virtual%29의 원리와 다중상속\MultiplInher1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="09.가상(Virtual)의 원리와 다중상속\MultiplInher2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="09.가상(Virtual)의 원리와 다중상속\MultiplInher3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="05.복사 생성자(CopyConstructor)\ReturnObjDeadTime.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="08.상속과 다형성\UpCasting_DownCasting.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="09.가상(Virtual)의 원리와 다중상속\Week14_notice\Employee.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="09.가상(Virtual)의 원리와 다중상속\Week14_notice\SalariedEmployee.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="08.상속과 다형성\Week13_hw\Circle.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="08.상속과 다형성\Week13_hw\Cube.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="08.상속과 다형성\Week13_hw\hw_main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="08.상속과 다형성\Week13_hw\Shape.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="08.상속과 다형성\Week13_hw\Sphere.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="08.상속과 다형성\Week13_hw\Square.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="09.가상(Virtual)의 원리와 다중상속\Week14_notice\CommisionEmployee.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="09.가상(Virtual)의 원리와 다중상속\Week14_notice\BasePlusCommitionEmployee.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="09.가상(Virtual)의 원리와 다중상속\Week14_notice\main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Text.txt" />
+    <Text Include="08.상속과 다형성\Upcasting_Downcasting.txt" />
+    <Text Include="09.가상%28Virtual%29의 원리와 다중상속\Abstract_Class.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="09.가상%28Virtual%29의 원리와 다중상속\Week14_notice\HourlyEmployee.cpp" />
   </ItemGroup>
 </Project>

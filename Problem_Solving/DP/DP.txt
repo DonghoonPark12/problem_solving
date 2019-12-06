@@ -1,0 +1,9 @@
+DP는 두가지 속성을 만족해야 한다.
+1. Overlapping Subproblem : 겹치는 작은 부분 문제 존재
+
+2. Optimal Substructure : 문제의 정답을 작은 문제의 정답에서 구할 수 있다.
+
+풀이 방법 2가지
+1. Top-Down : 재귀
+2. Bottom-Up : 반복문 (파이썬은 스택 오버플로우 자주 발생해서 반복문으로 푼다?)
+

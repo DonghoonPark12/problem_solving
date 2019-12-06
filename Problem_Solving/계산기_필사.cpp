@@ -6,29 +6,22 @@
 #include <algorithm>
 using namespace std;
 
-int get_priority(char c)
-{
-	switch (c)
-	{
+int get_priority(char c){
+	switch (c){
 	case '(':
-		return 0;
-		break;
+		return 0; break;
 	case '*':
-		return 3;
-		break;
+		return 3; break;
 	case '+':
-		return 2;
-		break;
+		return 2; break;
 	case ')':
-		return 1;
-		break;
+		return 1; break;
 	default:
 		return -1;
 	}
 }
 
-void infix_to_postfix(string &str)
-{
+void infix_to_postfix(string &str){
 	string out = " ";
 	int curPriority;
 	stack<char> op;
@@ -38,7 +31,6 @@ void infix_to_postfix(string &str)
 		curPriority = get_priority(str[i]);
 		if (curPriority < 0)// 피 연산자일 경우
 			out.push_back(str[i]);//출력 string에 push_back``
-
 		else {
 			// 스택의 top에 있는 것보다 현재 연산자가 더 크다면, 
 			// 빼서, str에 넣는다. 같으면 놔 둔다. 
@@ -90,8 +82,7 @@ int main() {
 	setbuf(stdout, NULL);
 	int N;
 	string str; //C++ string 자료형 생성
-	for (int test_case = 1; test_case <= 10; test_case++)
-	{
+	for (int test_case = 1; test_case <= 10; test_case++){
 		scanf("%d\n", &N);
 		cin >> str;
 

@@ -246,3 +246,7 @@ ModelManifest.xml
 .fake/
 /Algorithm/.DS_Store
 /Algorithm/SWEA/tmp.cpp
+*.pptx
+/Parallel_programming/22191412
+*.pdf
+*.avi

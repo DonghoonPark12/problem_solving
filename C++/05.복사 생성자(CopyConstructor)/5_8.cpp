@@ -23,7 +23,7 @@ int main() {
 	Book cpp("명품c++", 10000);
 	Book java = cpp;//디폴트 복사 생성자가 호출되어서 문자열이 같은 공간을 할당할 것이라는 우려가 있었다.
 
-	java.set("명품 java", 12000);
+	java.set("명품java", 12000);
 	cpp.show();
 	java.show();
 }

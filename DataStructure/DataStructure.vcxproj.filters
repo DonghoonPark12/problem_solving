@@ -37,4 +37,7 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="15_DFS_BFS\DFB_BFS.txt" />
+  </ItemGroup>
 </Project>
