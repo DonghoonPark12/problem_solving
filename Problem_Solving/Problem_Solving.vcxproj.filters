@@ -42,9 +42,6 @@
     <ClCompile Include="bit_field.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="C++ 동적할당.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Display_number.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -73,9 +70,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="If문 문제.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="isPangram.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="isPangram2.cpp">
@@ -111,19 +105,10 @@
     <ClCompile Include="LRU2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="maximum-element.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="n-gram.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="N으로 표현.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Parameters Default Value.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Tree.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="계산기.cpp">
@@ -153,9 +138,6 @@
     <ClCompile Include="비밀지도.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="시각덧셈.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="안녕.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -169,9 +151,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="중간 평균값 구하기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="캐시.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="회문1.c">
@@ -225,22 +204,34 @@
     <ClCompile Include="Algospot\binomial_coefficient.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="DP\[DP]X,Y입력%28+1%29%28-1%29.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DP\자연수 합 N의 경우의 수.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="DP\RGB 거리.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="DP\9095.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="DP\10844.cpp">
+    <ClCompile Include="DP\14002++%28LIS_print%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="DP\14002++%28LIS_print%29.cpp">
+    <ClCompile Include="DP\[Navis] 자연수 합 N의 경우의 수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DP\[Navis]X,Y입력%28+1%29%28-1%29.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DP\10844+%28쉬운 계단수%29.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DP\11722.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DP\9465+%28스티커%29.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SDS문제\sds2_1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SDS문제\sds2_2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Algospot\Quadtree.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

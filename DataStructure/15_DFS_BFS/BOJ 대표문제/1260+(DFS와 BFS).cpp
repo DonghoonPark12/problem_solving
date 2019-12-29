@@ -67,8 +67,8 @@ int main() {
 using namespace std;
 
 int v, e, s;
-//vector<int> adj_l(v); //v의 크기를 가진 벡터를 선언
-//vector<int> adj_l[v]; //v개의 벡터를 선언 이때 에러가 난다. 상수가 필요하다. 이런 이유로 인접 행렬은 ... 그런데 막상 수행해보니 메모리/시간 에서 이득.
+//vector<int> adj_l(v); //T&E1. v의 크기를 가진 벡터를 선언
+//vector<int> adj_l[v]; //T&E2. v개의 벡터를 선언 이때 에러가 난다. 상수가 필요하다. 이런 이유로 인접 행렬은 ... 그런데 막상 수행해보니 메모리/시간 에서 이득.
 bool visited[1001];
 vector<int> adj_l[1001];
 

@@ -2,12 +2,13 @@
 #include <iostream>
 using namespace std;
 
+//RGB 거리
+
 #define min(a,b) ((a)<=(b) ? (a) : (b))
 int main(void)
 {
 	int N;
 	int Answer = 0;
-	freopen("input.txt", "r", stdin);
 
 	scanf("%d", &N);//집의 수 (N,3)
 	int R_, G_, B_;

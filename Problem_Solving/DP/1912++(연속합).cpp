@@ -38,6 +38,8 @@
 //	return 0;
 //}
 
+
+//(음수가 포함될 수 있는) 연속합이 있을 때 최대합을 구하시오
 #include <iostream>
 #include <algorithm>
 using namespace std;

@@ -53,61 +53,11 @@ int main() {
 	for (int i = 0; i < h; i++) {
 		for (int j = 0; j < w; j++) {
 			scanf("%1d", &arr[i][j]);
-			//dist[i][j] = INT_MAX;
 		}
 	}
-	//1) dfs_dist 풀이, 시간 초과
-	//dist[0][0] = 1;
-	//dfs_dist(0, 0);
-	//cout << dist[h - 1][w - 1]<< '\n';
-
-	//2) dfs_backtracing 풀이, 시간 초과
-	//dfs_backtracing(0, 0, 1);
-	//cout << _min << '\n';
 
 	//3) bfs풀이
 	bfs(0, 0);
 	return 0;
 }
 
-
-//1) dfs_dist 풀이
-//이런 방식의 풀이를 종종 본다. arr 입력을 받을 때, dist에는 최대 값을 같이 넣어주고
-//가장 작은 값으로 갱신해 간다. 
-//다익스트라인가??
-//void dfs_dist(int y, int x) {
-//	if ((y == h - 1) && (x == w - 1)) {
-//		return;
-//	}
-//
-//	for (int i = 0; i < 4; i++) {
-//		int ny = y + dy[i];
-//		int nx = x + dx[i];
-//		if (ny<0 || ny >h || nx<0 || nx>w || arr[ny][nx] == 0) continue;
-//		if (dist[ny][nx] > dist[y][x] + 1) {
-//			dist[ny][nx] = dist[y][x] + 1;
-//			dfs_dist(ny, nx);
-//		}
-//	}
-//}
-
-//2) dfs_backtracing 풀이, 시간 초과
-//int _min = 0x7fffffff;
-//int cnt;
-//void dfs_backtracing(int y, int x, int cnt) {
-//	if ((y == h - 1) && (x == w - 1)) {
-//		_min = min(_min, cnt);
-//		return;
-//	}
-//
-//	for (int i = 0; i < 4; i++) {
-//		int ny = y + dy[i];
-//		int nx = x + dx[i];
-//		if (ny<0 || ny >h || nx<0 || nx>w || arr[ny][nx] == 2) continue;
-//		if (arr[ny][nx] == 1) {
-//			arr[ny][nx] = 2;
-//			dfs_backtracing(ny, nx, cnt + 1);
-//			arr[ny][nx] = 1;
-//		}
-//	}	
-//}

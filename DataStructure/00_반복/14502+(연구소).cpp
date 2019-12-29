@@ -10,9 +10,6 @@ using namespace std;
 */
 int h, w;
 int map[8][8];
-//vector<pair<int, int>> sp;//space
-//vector<int> pick;
-//vector<pair<int, int>> pick;
 
 queue<pair<int, int>> flood;
 queue<pair<int, int>> flood_backup;
@@ -68,7 +65,6 @@ void dfs(int count, int yp, int xp) {
 	for (int y = yp; y < h; y++) {
 		for (int x = xp; x < w; x++) {
 			if (map[y][x] == 0) {
-				//pick.push_back({ y, x });
 				map[y][x] = 1;
 				dfs(count + 1, y, x);
 				map[y][x] = 0;
@@ -90,7 +86,6 @@ int main() {
 		for (int j = 0; j < w; j++) {
 			cin >> value;
 			map[i][j] = value;
-			//if (value == 0) { sp.push_back({ i, j }); safe++; }
 			if (value == 0) { safe++; }
 			if (value == 2) { flood_backup.push({ i, j }); }
 		}

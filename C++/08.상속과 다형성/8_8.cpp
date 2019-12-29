@@ -77,13 +77,10 @@ public:
 };
 
 int main() {
-	//InkJet InkPrinter(5, 10); Laser LaserPrinter(3, 20);
 	InkJet *IP = new InkJet("Officejet V40", "HP", 5, 10);
 	Laser *LP = new Laser("SCX-6x45", "삼성전자", 3, 20);
 
 	cout << "현재 작동중인 2대의 프린트는 아래와 같다" << endl;
-	//cout << "잉크젯 : OfficJet V40 .HP ,남은 종이 5장, 남은 잉크 10" << endl;
-	//cout << "레이저: SCX-6x4, 삼성전자 ,남은 종이 3장, 남은 토너 20" << endl;
 	cout << "잉크젯: "; IP->show();
 	cout << "레이저: "; LP->show();
 

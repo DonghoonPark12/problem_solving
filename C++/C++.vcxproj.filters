@@ -137,18 +137,6 @@
     <ClCompile Include="c_Ex.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex8_3.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex8_5.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex8_7.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ex8_8.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="File.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -204,9 +192,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="new_delete.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="PointConsoleOutput.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="reference.cpp">
@@ -270,9 +255,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="OOP_Project\Account.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="OOP_Project\OOP1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="04.클래스의 완성\miscelleneous\FruitScleSlim1.cpp">
@@ -492,6 +474,42 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="09.가상(Virtual)의 원리와 다중상속\Week14_notice\main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="09.가상(Virtual)의 원리와 다중상속\9_3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="09.가상(Virtual)의 원리와 다중상속\9_10.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="OOP_Project\OOP_tmp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="OOP_Project\HighCreditAccount.h">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="08.상속과 다형성\8_3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="08.상속과 다형성\8_5.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="08.상속과 다형성\8_7.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="08.상속과 다형성\8_8.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="13.템플릿(Template)1\Week15\1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="13.템플릿(Template)1\Week15\sort_template.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Ex3\Final_exam.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10.연산자오버로딩1\PointConsoleOutput.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

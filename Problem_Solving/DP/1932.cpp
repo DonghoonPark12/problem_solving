@@ -6,8 +6,9 @@ using namespace std;
 int Max(int a, int b) { return a > b ? (a) : (b); }
 
 void main() {
-	freopen("input.txt", "r", stdin);
-	int i, j, n, max = 0; int arr[501][501] = { 0 }; cin >> n;
+	int i, j, n, max = 0; 
+	int arr[501][501] = { 0 }; cin >> n;
+
 	for (i = 1; i <= n; i++) {
 		for (j = 1; j <= i; j++) {
 			cin >> arr[i][j];

@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="KalmanFilter\KalmanFilterDemo_solution.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="KalmanFilter.cpp">
+    <ClCompile Include="OpenCV412.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

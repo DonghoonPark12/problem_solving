@@ -1,7 +1,7 @@
 #define	_CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int arr[7][7];
+/*int arr[7][7];
 
 int main() {
 	freopen("input.txt", "r", stdin);
@@ -42,7 +42,7 @@ int main() {
 	}
 
 	return 0;
-}
+}*/
 
 
 
@@ -79,9 +79,9 @@ int main()
 			rot(i);
 
 		printf("#%d\n", ct);
-		for (int i = 0; i < n; i++)
+		for (int d = 1; d <= 3; d++)
 		{
-			for (int d = 1; d <= 3; d++)
+			for (int i = 0; i < n; i++)
 			{
 				for (int j = 0; j < n; j++)
 				{

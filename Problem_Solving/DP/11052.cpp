@@ -40,7 +40,7 @@ int n;
 int value[1001];
 int dp[1001];
 
-//11052
+//11052 카드 구매하기
 int main() {
 	cin >> n;
 	for (int i = 1; i <= n; i++) {
@@ -56,7 +56,7 @@ int main() {
 	return 0;
 }
 
-//16194
+//16194 카드 구매하기2
 int main() {
 	cin >> n;
 	for (int i = 1; i <= n; i++) {

@@ -36,8 +36,25 @@
     <ClCompile Include="01_Stack\BOJ대표문제\1935+%28후위표기식계산%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="01_Stack\열혈구현\main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="15_DFS_BFS\BOJ 대표문제\7569.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="15_DFS_BFS\BOJ 대표문제\2606.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="08_Tree\Tree.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="15_DFS_BFS\DFB_BFS.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="01_Stack\열혈구현\Stack.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,9 +1,7 @@
 #define	_CRT_SECURE_NO_WARNINGS
-#include <iostream>
-#include <string>
+
 #include "BankingCommonDecl.h"
 #include "AccountHandler.h"
-using namespace std;
 
 /*
 1. 계좌 계설 할 때 마다 구조체가 새로 생성되어야 한다.
@@ -15,17 +13,8 @@ using namespace std;
 - 입, 출금시 아이디 없는 곳에 접근시 예외처리 안되있다. -> 완료
 */
 
-//typedef struct _account {
-//	int id;
-//	//string name;
-//	char name[10];
-//	int won;
-//	struct _account *next;
-//}account;
 
 int main() {
-	//freopen("input.txt", "r", stdin);
-	//setbuf(stdout, NULL);
 	AccountHandler manager;
 	while (1) {
 		manager.ShowMenu();
@@ -50,12 +39,10 @@ int main() {
 			break;
 		case EXIT:
 			return 0;
+		default:
+			cout << "Ileegal selection!" << '\n';
 		}
-		/*for (int i = 0; i < manager.GetAccount_num(); i++) {
-			delete manager.acc[i];
-		}*/ //필요 없다. 프로그램 종료가 되면 Account 객체의 소멸자 호출
 	}
-
 	return 0;
 }
 
