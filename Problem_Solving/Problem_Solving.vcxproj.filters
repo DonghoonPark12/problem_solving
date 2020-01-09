@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="16장.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Algorithm.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -27,16 +24,10 @@
     <ClCompile Include="arctan2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="b1.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="b2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="b3.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="bit.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="bit_field.c">
@@ -67,9 +58,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="HanoiTowerSolu.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="If문 문제.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="isPangram2.cpp">
@@ -148,9 +136,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="조교의성적매기기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="중간 평균값 구하기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="회문1.c">
@@ -232,6 +217,15 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Algospot\Quadtree.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\1992.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\3085.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\1107.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

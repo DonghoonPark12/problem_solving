@@ -512,6 +512,9 @@
     <ClCompile Include="10.연산자오버로딩1\PointConsoleOutput.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="00.C_Review\file_input_output_16장.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Text.txt" />
