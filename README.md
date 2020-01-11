@@ -11,7 +11,10 @@
 [Coursera Operating System](https://www.coursera.org/learn/os-power-user?#syllabus)  
 [KU Prof.최린 Operating System](https://www.youtube.com/playlist?list=PLL3t9Nt4HrftMbghYQIDA5wsC1BmzgWnc)  
   
-#### 3. Programming Skill : Advanced C++  
+#### 3. Programming Skill : Advanced C/C++  
+[Practical Programming in C](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-087-practical-programming-in-c-january-iap-2010/)  
+[Introduction to C Memory Management and C++ Object-Oriented Programming](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-088-introduction-to-c-memory-management-and-c-object-oriented-programming-january-iap-2010/)
+    
 [Optimizing C++/Writing efficient code/Performance improving features.](https://en.wikibooks.org/wiki/Optimizing_C%2B%2B/Writing_efficient_code/Performance_improving_features)  
 [Efficient C++ Performance Programming Techniques](http://www.whigg.ac.cn/resource/program/CPP/201010/P020101023562491092566.pdf)  
 [10 Tips for C and C++ Performance Improvement Code Optimization](https://www.thegeekstuff.com/2015/01/c-cpp-code-optimization/)  
