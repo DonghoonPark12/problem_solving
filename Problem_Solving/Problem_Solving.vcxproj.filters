@@ -135,9 +135,6 @@
     <ClCompile Include="어디에 단어가 들어갈 수 있을까.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="조교의성적매기기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="회문1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>

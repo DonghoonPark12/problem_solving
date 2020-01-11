@@ -51,21 +51,6 @@
     <ClInclude Include="NameCard.h">
       <Filter>소스 파일\Ex5 함수와 참조, 복사 생성자</Filter>
     </ClInclude>
-    <ClInclude Include="OOP_Project\AccountHandler.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="OOP_Project\AccountArray.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="OOP_Project\Account.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="OOP_Project\BankingCommonDecl.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="OOP_Project\NormalAccount.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
     <ClInclude Include="04.클래스의 완성\miscelleneous\FruitsBuyer.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
@@ -132,11 +117,23 @@
     <ClInclude Include="09.가상(Virtual)의 원리와 다중상속\Week14_notice\BasePlusCommitionEmployee.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="16.OOP_Project\Account.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="16.OOP_Project\AccountArray.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="16.OOP_Project\AccountHandler.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="16.OOP_Project\BankingCommonDecl.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="16.OOP_Project\NormalAccount.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="c_Ex.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="File.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -243,18 +240,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="13.템플릿%28Template%291\Template.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="OOP_Project\BankingSystemMain.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="OOP_Project\AccountHandler.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="OOP_Project\AccountArray.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="OOP_Project\Account.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="04.클래스의 완성\miscelleneous\FruitScleSlim1.cpp">
@@ -482,12 +467,6 @@
     <ClCompile Include="09.가상(Virtual)의 원리와 다중상속\9_10.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="OOP_Project\OOP_tmp.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="OOP_Project\HighCreditAccount.h">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="08.상속과 다형성\8_3.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -513,6 +492,36 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="00.C_Review\file_input_output_16장.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="00.C_Review\size_t.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="00.C_Review\c_Ex.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20.Effective_C++\explicit.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="16.OOP_Project\Account.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="16.OOP_Project\AccountArray.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="16.OOP_Project\AccountHandler.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="16.OOP_Project\BankingSystemMain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="16.OOP_Project\HighCreditAccount.h">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="16.OOP_Project\OOP_tmp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="00.C_Review\define_mecro_caution.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
