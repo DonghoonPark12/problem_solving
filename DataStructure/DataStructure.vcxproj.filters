@@ -48,6 +48,9 @@
     <ClCompile Include="08_Tree\Tree.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Test_LinkedList.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="15_DFS_BFS\DFB_BFS.txt" />

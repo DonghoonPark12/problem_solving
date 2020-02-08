@@ -9,7 +9,7 @@ public:
 		simObjCnt++;
 	}
 };
-int SoSimple::simObjCnt = 0;
+int SoSimple::simObjCnt = 0; //어짜피 0으로 초기화 된다.
 
 int main() {
 	cout << SoSimple::simObjCnt << "번째 soSimple 객체" << endl; //클래스의 이름을 이용해서 접근하는 것을 권장. 

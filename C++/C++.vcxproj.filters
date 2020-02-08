@@ -30,23 +30,8 @@
     <ClInclude Include="BookClass.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
-    <ClInclude Include="HighCreditAccount.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
     <ClInclude Include="NameCard2.h">
       <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="namespace.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Ram.h">
-      <Filter>소스 파일\Ex3 클래스와 객체</Filter>
-    </ClInclude>
-    <ClInclude Include="Point2.h">
-      <Filter>소스 파일\Ex3 클래스와 객체\파일분할</Filter>
-    </ClInclude>
-    <ClInclude Include="Ring.h">
-      <Filter>소스 파일\Ex3 클래스와 객체\파일분할</Filter>
     </ClInclude>
     <ClInclude Include="NameCard.h">
       <Filter>소스 파일\Ex5 함수와 참조, 복사 생성자</Filter>
@@ -134,22 +119,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="File.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Function in  Struct.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="FunctionOverloading.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="FunctionOverride.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Generic Class.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Generic.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Graph.c">
@@ -158,22 +128,7 @@
     <ClCompile Include="Graph.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="HASComposite.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="inheritance3.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="inheritance4.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="InheritAssignOperation.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="inline function.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="main.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="NameCard2.cpp">
@@ -182,28 +137,7 @@
     <ClCompile Include="NameCard2Main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="namespace.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="namespace2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="new_delete.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="reference.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ReferenceAttribute.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="RefReturnOne.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="struct_LinkedList.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Test_LinkedList.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="VirtualDestructor.cpp">
@@ -211,18 +145,6 @@
     </ClCompile>
     <ClCompile Include="연산자 재정의.cpp">
       <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Ram.cpp">
-      <Filter>소스 파일\Ex3 클래스와 객체</Filter>
-    </ClCompile>
-    <ClCompile Include="Ram_main.cpp">
-      <Filter>소스 파일\Ex3 클래스와 객체</Filter>
-    </ClCompile>
-    <ClCompile Include="Rect_main.cpp">
-      <Filter>소스 파일\Ex3 클래스와 객체</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>소스 파일\Ex3 클래스와 객체\파일분할</Filter>
     </ClCompile>
     <ClCompile Include="NameCard.cpp">
       <Filter>소스 파일\Ex5 함수와 참조, 복사 생성자</Filter>
@@ -284,9 +206,6 @@
     <ClCompile Include="05.복사 생성자%28CopyConstructor%29\PassObjCopycon.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="05.복사 생성자%28CopyConstructor%29\ReturnObjCopyCon.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="05.복사 생성자%28CopyConstructor%29\생성자와 소멸자의 호출시기 예제.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -324,9 +243,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="06.friend와 staric 그리고 const\PublicStaticMember.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="06.friend와 staric 그리고 const\StaticMember.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="07.상속%28Inheritance%29의 이해\EmployeeManager1.cpp">
@@ -500,9 +416,6 @@
     <ClCompile Include="00.C_Review\c_Ex.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="20.Effective_C++\explicit.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="16.OOP_Project\Account.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -524,11 +437,50 @@
     <ClCompile Include="00.C_Review\define_mecro_caution.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="06.friend와 staric 그리고 const\StaticMember★★.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="07.상속%28Inheritance%29의 이해\HASComposite.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="13.템플릿%28Template%291\Generic Class.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="13.템플릿%28Template%291\Generic.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10.연산자오버로딩1\FunctionOverride.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10.연산자오버로딩1\FunctionOverloading.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10.연산자오버로딩1\ReferenceAttribute.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="00.C_Review\File.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="00.C_Review\reference.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="00.C_Review\RefReturnOne.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="07.상속%28Inheritance%29의 이해\InheritAssignOperation.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="05.복사 생성자%28CopyConstructor%29\★★ReturnObjCopyCon.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="00.Effective_C++\explicit.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Text.txt" />
     <Text Include="08.상속과 다형성\Upcasting_Downcasting.txt" />
     <Text Include="09.가상%28Virtual%29의 원리와 다중상속\Abstract_Class.txt" />
+    <Text Include="00.Effective_C++\Text.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="09.가상%28Virtual%29의 원리와 다중상속\Week14_notice\HourlyEmployee.cpp" />
