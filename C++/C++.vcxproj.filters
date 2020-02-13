@@ -296,9 +296,6 @@
     <ClCompile Include="07.상속%28Inheritance%29의 이해\Week11_notice\main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="05.복사 생성자(CopyConstructor)\IKnowTempObj.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="07.상속%28Inheritance%29의 이해\inheritance.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -336,9 +333,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="09.가상(Virtual)의 원리와 다중상속\MultiplInher3.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="05.복사 생성자(CopyConstructor)\ReturnObjDeadTime.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="08.상속과 다형성\UpCasting_DownCasting.cpp">
@@ -434,9 +428,6 @@
     <ClCompile Include="00.C_Review\define_mecro_caution.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="06.friend와 staric 그리고 const\StaticMember★★.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="07.상속%28Inheritance%29의 이해\HASComposite.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -474,6 +465,15 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="00.C_Review\File_Input_output\File.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="05.복사 생성자%28CopyConstructor%29\★★ReturnObjDeadTime.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="05.복사 생성자%28CopyConstructor%29\★★IKnowTempObj.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="06.friend와 staric 그리고 const\★★StaticMember.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
