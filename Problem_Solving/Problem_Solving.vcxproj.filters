@@ -174,9 +174,6 @@
     <ClCompile Include="수학\17103.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Algospot\binomial_coefficient.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="DP\9095.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -204,13 +201,13 @@
     <ClCompile Include="SDS문제\sds2_2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Algospot\Quadtree.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ\1992.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="BOJ\3085.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Algospot\Quantization.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
