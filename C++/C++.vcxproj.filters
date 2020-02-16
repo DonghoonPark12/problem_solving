@@ -476,6 +476,9 @@
     <ClCompile Include="06.friend와 staric 그리고 const\★★StaticMember.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="00.Effective_C++\SmartPointer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="08.상속과 다형성\Upcasting_Downcasting.txt" />
