@@ -23,7 +23,6 @@ public:
     const static int MIN_ELEM = 10;
 
     // 최대 n 개 요소를 가질 수 있는 Stack 생성자
-    // 기본값을 지정해 봤습니다.
     explicit Stack(int n = MIN_ELEM) 
         : _data(n), _pos(0) 
     {
@@ -112,7 +111,6 @@ int main(void){
     아무리 적응하려고 한다지만 s2 = 10 을 만났을 때 Stack(int) 를 호출하는 건 
     프로그래머 입장에서는 참 예상하기 힘든 일입니다. 
     그래서 이런 예상치 못한 수행이 일어나면 프로그래머는 그런 버그를 정말 찾기 힘들게 됩니다.
-
 
     피해가는 방법이야 s2 = 10 과 같은 코드를 작성하지 않도록 Coding Guideline 에 넣어 두고,
     Code Review 도 하고 그런 방법도 있겠지만 좀 더 좋은 방법은 아예 s2 = 10 과 같은 코드를 만나면
