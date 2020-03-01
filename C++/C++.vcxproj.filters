@@ -200,12 +200,6 @@
     <ClCompile Include="05.복사 생성자%28CopyConstructor%29\5_8.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="05.복사 생성자%28CopyConstructor%29\CopyConstructor.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="05.복사 생성자%28CopyConstructor%29\PassObjCopycon.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="05.복사 생성자%28CopyConstructor%29\생성자와 소멸자의 호출시기 예제.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -474,6 +468,18 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="06.friend와 staric 그리고 const\★★StaticMember.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="00.Effective_C++\SmartPointer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="05.복사 생성자%28CopyConstructor%29\CopyConstructor.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="05.복사 생성자%28CopyConstructor%29\★★PassObjCopycon.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="07.상속(Inheritance)의 이해\[Open Challenge] 상속관계 클래스 작성.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
