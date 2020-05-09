@@ -213,6 +213,12 @@
     <ClCompile Include="BOJ\2504.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode\tmp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode\calloc.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DistanceEstimator.h">
