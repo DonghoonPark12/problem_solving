@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QT", "QT\QT.vcxproj", "{58F
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "POSIX", "POSIX\POSIX.vcxproj", "{8F02AE40-4ABE-4EFD-82DA-9108847C6E83}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MUDENGI", "..\MUDENGI\MUDENGI\MUDENGI.vcxproj", "{54C1028E-2175-4CB8-B442-1874F72A9E4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -201,6 +203,20 @@ Global
 		{8F02AE40-4ABE-4EFD-82DA-9108847C6E83}.Release|x64.Build.0 = Release|x64
 		{8F02AE40-4ABE-4EFD-82DA-9108847C6E83}.Release|x86.ActiveCfg = Release|Win32
 		{8F02AE40-4ABE-4EFD-82DA-9108847C6E83}.Release|x86.Build.0 = Release|Win32
+		{54C1028E-2175-4CB8-B442-1874F72A9E4F}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{54C1028E-2175-4CB8-B442-1874F72A9E4F}.Debug|ARM.ActiveCfg = Debug|Win32
+		{54C1028E-2175-4CB8-B442-1874F72A9E4F}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{54C1028E-2175-4CB8-B442-1874F72A9E4F}.Debug|x64.ActiveCfg = Debug|x64
+		{54C1028E-2175-4CB8-B442-1874F72A9E4F}.Debug|x64.Build.0 = Debug|x64
+		{54C1028E-2175-4CB8-B442-1874F72A9E4F}.Debug|x86.ActiveCfg = Debug|Win32
+		{54C1028E-2175-4CB8-B442-1874F72A9E4F}.Debug|x86.Build.0 = Debug|Win32
+		{54C1028E-2175-4CB8-B442-1874F72A9E4F}.Release|Any CPU.ActiveCfg = Release|Win32
+		{54C1028E-2175-4CB8-B442-1874F72A9E4F}.Release|ARM.ActiveCfg = Release|Win32
+		{54C1028E-2175-4CB8-B442-1874F72A9E4F}.Release|ARM64.ActiveCfg = Release|Win32
+		{54C1028E-2175-4CB8-B442-1874F72A9E4F}.Release|x64.ActiveCfg = Release|x64
+		{54C1028E-2175-4CB8-B442-1874F72A9E4F}.Release|x64.Build.0 = Release|x64
+		{54C1028E-2175-4CB8-B442-1874F72A9E4F}.Release|x86.ActiveCfg = Release|Win32
+		{54C1028E-2175-4CB8-B442-1874F72A9E4F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

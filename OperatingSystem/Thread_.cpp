@@ -1,6 +1,6 @@
 /* Thread */
 
-#include < thread>
+#include <thread>
 #include <iostream>
 using namespace std;
 

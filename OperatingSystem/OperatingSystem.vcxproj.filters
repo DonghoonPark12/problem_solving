@@ -27,9 +27,6 @@
     <ClCompile Include="Thread_.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Embedded.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Task와 시그널.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
