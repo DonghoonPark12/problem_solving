@@ -1,7 +1,0 @@
-
-자바 프레임워크 <-- Java로 개발
-닷넷 프레임워크 <-- C#으로 개발
- QT  프레임워크 <-- C++로 개발
-
-
- https://m.blog.naver.com/PostView.nhn?blogId=friday_jina&logNo=221585498380&categoryNo=7&proxyReferer=https%3A%2F%2Fwww.google.com%2F
