@@ -3,21 +3,21 @@
 #define CMDSIZE 100
 
 /*
-	»óÈ² : 
-	cls, ins ¸¶´Ù È£ÃâµÇ¾î¾ß ÇÏ´Â ÇÔ¼ö°¡ Á¸ÀçÇÑ´Ù.
-	°¢°¢ÀÇ ÇÔ¼ö´Â Àü´Ş ¹Ş´Â cls, ins¸¦ È®ÀÎÇÏ°í °¢°¢¿¡ ¸Â´Â ÇÔ¼ö¸¦ 
-	È£ÃâÇØ¾ß ÇÑ´Ù.
+	ìƒí™© : 
+	cls, ins ë§ˆë‹¤ í˜¸ì¶œë˜ì–´ì•¼ í•˜ëŠ” í•¨ìˆ˜ê°€ ì¡´ì¬í•œë‹¤.
+	ê°ê°ì˜ í•¨ìˆ˜ëŠ” ì „ë‹¬ ë°›ëŠ” cls, insë¥¼ í™•ì¸í•˜ê³  ê°ê°ì— ë§ëŠ” í•¨ìˆ˜ë¥¼ 
+	í˜¸ì¶œí•´ì•¼ í•œë‹¤.
 
-	´ÙÀ½°ú °°Àº ±¸Á¶ÀÇ ÀåÁ¡	: 
-	APDU(¸í·É)°ú ÇÔ¼ö¸¦ ÇÏ³ª·Î ¹­¾ú´Ù. ±×¸®°í ÀÌ°ÍÀ» ¹è¿­¿¡ ´ã¾Ò´Ù.
-	ÇÏ³ªÀÇ ¸ğµâº°·Î ÀÎÅÍÆäÀÌ½º¿Í ±â´ÉÀ» ºĞ¸®ÇÒ ¼ö ÀÖ´Â ÀåÁ¡ÀÌ ÀÖ´Ù.
+	ë‹¤ìŒê³¼ ê°™ì€ êµ¬ì¡°ì˜ ì¥ì 	: 
+	APDU(ëª…ë ¹)ê³¼ í•¨ìˆ˜ë¥¼ í•˜ë‚˜ë¡œ ë¬¶ì—ˆë‹¤. ê·¸ë¦¬ê³  ì´ê²ƒì„ ë°°ì—´ì— ë‹´ì•˜ë‹¤.
+	í•˜ë‚˜ì˜ ëª¨ë“ˆë³„ë¡œ ì¸í„°í˜ì´ìŠ¤ì™€ ê¸°ëŠ¥ì„ ë¶„ë¦¬í•  ìˆ˜ ìˆëŠ” ì¥ì ì´ ìˆë‹¤.
 
-	»ç¿ë¹ı : 
-	±¸Á¶Ã¼ Æ÷ÀÎÅÍÀÇ ÁÖ¼Ò¸¦ Handler¿¡°Ô ³Ñ°ÜÁØ´Ù. 	
+	ì‚¬ìš©ë²• : 
+	êµ¬ì¡°ì²´ í¬ì¸í„°ì˜ ì£¼ì†Œë¥¼ Handlerì—ê²Œ ë„˜ê²¨ì¤€ë‹¤. 	
 
 */
 
-typedef void* EntryHandler;
+typedef void* CommandEntryHandler;
 
 typedef struct CommandEntry {
 	uint8_t cls;
@@ -28,7 +28,7 @@ typedef struct CommandEntry {
 
 struct CommandEntry CmdArray[CMDSIZE];
 
-EntryHandler FindCommand(uint8_t cls, uint8_t ins) {
+CommandEntryHandler FindCommand(uint8_t cls, uint8_t ins) {
 	int i;
 	CommandEntry *pCommand = &CmdArray[0];
 
@@ -38,8 +38,9 @@ EntryHandler FindCommand(uint8_t cls, uint8_t ins) {
 		}
 		pCommand++;
 	}
-	return (EntryHandler)pCommand;
+	return (CommandEntryHandler)pCommand;
 }
+
 
 
 
