@@ -19,7 +19,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp; [Window Desktop Programming Youtube Lecture](https://www.youtube.com/watch?v=fW8y3zwOfs4&list=PLOKPEzlY4JKTFx1udqQRdYb1ydob9V5u3)   
 &nbsp;&nbsp;&nbsp;&nbsp; [Window Desktop Programming Blog](https://blog.naver.com/tipsware/221059977193)
 #### [optional] 2-3 RTOS  
-&nbsp;&nbsp;&nbsp;&nbsp; [FreeRTOS](http://wiki.csie.ncku.edu.tw/embedded/FreeRTOS_Melot.pdf)
+&nbsp;&nbsp;&nbsp;&nbsp; [FreeRTOS pdf file](http://wiki.csie.ncku.edu.tw/embedded/FreeRTOS_Melot.pdf)
   
 ### 3. Programming Skill : Advanced C/C++  
 [Practical Programming in C](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-087-practical-programming-in-c-january-iap-2010/)  
