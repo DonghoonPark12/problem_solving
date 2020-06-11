@@ -15,6 +15,9 @@
 #### 2-2 Shell Programming   
 &nbsp;&nbsp;&nbsp;&nbsp; [Shell Script](https://wiki.lib.sun.ac.za/images/c/ca/TLCL-13.07.pdf)  
   
+#### 2-3 Window Desktop Programming  
+&nbsp;&nbsp;&nbsp;&nbsp; [Window Desktop Programming Youtube Lecture](https://www.youtube.com/watch?v=fW8y3zwOfs4&list=PLOKPEzlY4JKTFx1udqQRdYb1ydob9V5u3)   
+&nbsp;&nbsp;&nbsp;&nbsp; [Window Desktop Programming Blog](https://blog.naver.com/tipsware/221059977193)
 #### [optional] 2-3 RTOS  
 &nbsp;&nbsp;&nbsp;&nbsp; [FreeRTOS](http://wiki.csie.ncku.edu.tw/embedded/FreeRTOS_Melot.pdf)
   
