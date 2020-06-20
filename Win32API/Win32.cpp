@@ -53,5 +53,6 @@ int APIENRTY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR IpCmdLi
         DispatchMessage(&msg);                                    // 발생된 메시지를 처리한다!
     }
     return msg.wParam;
+    /* ------------------------------------------------------------------------------------------------------------ */
 }
     
