@@ -10,6 +10,11 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
     {
         PostQuitMessage(0);                                      //자신의 메시지 큐에 WM_QUIT 메시지를 넣는다.
     }
+    if (uMsg == WM_CLOSE) 
+    { 
+        if(IDCANCEL == MessageBox(hWnd, L"나 죽이지마!", L"나 죽이려고?", MB_OKCANCEL | MB_ICONQUESTION)) 
+            return 1;
+    }
     
     //개발자가 처리하지 않은 메시지들을 처리한다.
     return DefWindowProc(hWnd, uMsg, wParam, lParam);
