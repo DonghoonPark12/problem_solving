@@ -1,6 +1,8 @@
 ## How can you be a good engineer
 ---
-
+개념 정리 : https://www.notion.so/Algorithm-47ff2302e3d04038b6fef3e565a3b5c9  
+  
+---
 ### 1. Problem Solving Ability : Daily problem solving
 [SWExpertAcademy](https://swexpertacademy.com/main/main.do)  
 [BaekJoon](https://www.acmicpc.net/)  
