@@ -8,17 +8,17 @@
 void error_handling(char* message);
 
 /*
-[설명]
-소켓은 네트워크 연결 도구
-소켓은 프로그래머에게 데이터 송수신에 대한 물리적, SW적 세세한 내용을 신경쓰지 않게 한다.
+	[설명]
+	소켓은 네트워크 연결 도구
+	소켓은 프로그래머에게 데이터 송수신에 대한 물리적, SW적 세세한 내용을 신경쓰지 않게 한다.
 
-int socket(int domain, int type, int protocol);
+	int socket(int domain, int type, int protocol);
 
-int bind(int sockfd, struct sockaddr* myaddr, socklen_t addlen);
+	int bind(int sockfd, struct sockaddr* myaddr, socklen_t addlen);
 
-int listem(int sockfd, int backlog);
+	int listen(int sockfd, int backlog);
 
-int accept(int sockfd, struct sockaddr *arr, socklen_t addlen);
+	int accept(int sockfd, struct sockaddr *arr, socklen_t addlen);
 */
 
 int main(int argc, char *argv[])

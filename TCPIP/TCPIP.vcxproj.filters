@@ -14,4 +14,27 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hello_server.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="hello_client.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="low_open.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="low_read.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="fd_seri.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="hello_server_win.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="hello_client_win.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

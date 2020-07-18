@@ -35,9 +35,8 @@ int main(int argc, char* argv[])
 	if (str_len == -1)
 		error_handling("read() error!");
 
-	write(clnt_sock, message, sizeof(message));
-	close(clnt_sock);
-	close(serv_sock);
+	printf("Message from server: %s \n", message);
+	close(sock);
 	return 0;
 }
 
