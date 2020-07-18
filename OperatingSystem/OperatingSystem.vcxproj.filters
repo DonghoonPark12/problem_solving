@@ -30,5 +30,40 @@
     <ClCompile Include="Task와 시그널.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Patterns\IFX_Io_Manager.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Patterns\Command_Handle.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Patterns\First_Class_ADT\Customer.h">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Patterns\First_Class_ADT\Customer.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Patterns\StatePattern\0_Naive_Conditional.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Patterns\StatePattern\1_Table_based.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Patterns\StatePattern\DigitalStopWatch.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Patterns\StatePattern\WatchState.h">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Patterns\IFX_Io_Manager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Patterns\StatePattern\Info.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Patterns\First_Class_ADT\Info.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
