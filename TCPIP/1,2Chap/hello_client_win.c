@@ -40,6 +40,16 @@ int main(int argc, char* argv[])
 	if (strLen == -1)
 		ErrorHandling("read() error!");
 
+	/* 
+	//한 비트씩 받을 경우
+	while (read_len = read(hSocket, &message[idx++], 1, 0))
+	{
+		if (str_len == -1)
+			error_handling("read() error!");
+		str_len += read_len;
+	}
+	*/
+
 	printf("Message from server: %s \n", message);
 	closesocket(hSocket);
 	WSACleanup();
