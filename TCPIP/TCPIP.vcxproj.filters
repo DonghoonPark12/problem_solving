@@ -24,5 +24,8 @@
     <ClCompile Include="..\..\..\..\Downloads\TCPIP_Src\Chapter3 소스코드\conv_addr_win.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1,2Chap\hello_server_win.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

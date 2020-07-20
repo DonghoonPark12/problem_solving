@@ -20,8 +20,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\Downloads\TCPIP_Src\Chapter3 소스코드\conv_addr_win.c" />
+    <ClCompile Include="1,2Chap\hello_server_win.c" />
     <ClCompile Include="3Chap\inet_adrconv_win.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="3Chap\inet_aton.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
