@@ -30,7 +30,7 @@ void error_handling(char* message);
 int main(int argc, char *argv[])
 {
 	int serv_sock; /* 서버소켓 - 문지기 */
-	int clnt_sock;
+	int clnt_sock; /* 실제 클라인트 소켓과 연결되는 소켓 */
 
 	struct sockaddr_in serv_addr;
 	struct sockaddr_in clnt_addr;
