@@ -21,10 +21,22 @@
     <ClCompile Include="3Chap\inet_aton.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Downloads\TCPIP_Src\Chapter3 소스코드\conv_addr_win.c">
+    <ClCompile Include="1,2Chap\hello_server_win.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1,2Chap\hello_server_win.c">
+    <ClCompile Include="5Chap\echo_client_sol.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="5Chap\op_client.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="5Chap\op_client_win.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="5Chap\op_server.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="5Chap\op_server_win.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
