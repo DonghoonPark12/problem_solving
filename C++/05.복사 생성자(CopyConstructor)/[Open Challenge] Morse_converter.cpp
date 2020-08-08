@@ -6,7 +6,7 @@
 */
 using namespace std;
 class Morse {
-	string alphabet[26];
+	string hash[26];
 	string digit[10];
 	string slash, question, comma, period, plus, equal;
 public:
@@ -16,16 +16,16 @@ public:
 };
 
 Morse::Morse() {
-	alphabet[0]=".-"; alphabet[1]="-..."; alphabet[2]="-.-."; alphabet[3]="-.."; alphabet[4]="."; alphabet[5]="..-."; alphabet[6]="--."; alphabet[7]="...."; alphabet[8]=".."; alphabet[9]=".---";
-	alphabet[10]= "-.-"; alphabet[11]= ".-.."; alphabet[12]= "--"; alphabet[13]= "-."; alphabet[14]= "---"; alphabet[15]= ".--."; alphabet[16]= "--.-"; alphabet[17]=".-."; alphabet[18]="..."; alphabet[19]="-"; 
-	alphabet[20] = "..-"; alphabet[21] = "...-"; alphabet[22]=".--"; alphabet[23]= "-..-"; alphabet[24]= "-.--"; alphabet[25] = "--..";
+	hash[0]=".-"; hash[1]="-..."; hash[2]="-.-."; hash[3]="-.."; hash[4]="."; hash[5]="..-."; hash[6]="--."; hash[7]="...."; hash[8]=".."; hash[9]=".---";
+	hash[10]= "-.-"; hash[11]= ".-.."; hash[12]= "--"; hash[13]= "-."; hash[14]= "---"; hash[15]= ".--."; hash[16]= "--.-"; hash[17]=".-."; hash[18]="..."; hash[19]="-"; 
+	hash[20] = "..-"; hash[21] = "...-"; hash[22]=".--"; hash[23]= "-..-"; hash[24]= "-.--"; hash[25] = "--..";
 	
 	digit[0] = "-----"; digit[1] = ".----"; digit[2] = "..---"; digit[3] = "...--"; digit[4] = "....-"; digit[5] = "....."; digit[6] = "-...."; digit[7] = "--..."; digit[8] = "----.."; digit[9] = "----." ;
 	
 	/*
 	string alphamorse[26] = { ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.." };
 	string digitmorse[10] = { "-----", ".----", "..---", "...--", "....-", ".....", "-....", "--...", "---..", "----." };
-	for (int i = 0; i<26; i++) alphabet[i] = alphamorse[i];
+	for (int i = 0; i<26; i++) hash[i] = alphamorse[i];
 	for (int i = 0; i<10; i++) digit[i] = digitmorse[i];
 	*/
 
@@ -42,7 +42,7 @@ void Morse::text2Morse(string text, string &morse) {
 		c = text[i];
 		if (c >= 'A' && c <= 'Z') c = tolower(c);
 
-		if (c >= 'a' && c <= 'z') morse += alphabet[c - 'a']; 
+		if (c >= 'a' && c <= 'z') morse += hash[c - 'a']; 
 		else if (c >= '0' && c <= '9') morse += digit[c - '0'];
 		else if (c == '/') morse += slash;
 		else if (c == '?') morse += question;
@@ -65,7 +65,7 @@ bool Morse::morse2Text(string morse, string &text) {
 		bool flag = false;            //j는 어느 위치 부터 찾을지를 결정(at or after position j).
 		string s = morse.substr(j, pos - j); //모스 부호 추출
 		for (int i = 0; i < 26; ++i) {
-			if (s == alphabet[i]) { //string 클래스 operator== 비교 연산자 오버로딩 되어 있음.
+			if (s == hash[i]) { //string 클래스 operator== 비교 연산자 오버로딩 되어 있음.
 				text2.append(alpah[i]);
 				flag = true;
 				break;

@@ -59,8 +59,8 @@ int main(void)
 //		int step = 0;
 //		for (int i = 0; i < n; i++) {
 //			if (arr[i][0] == (int('A') + step)){
-//				Answer++; // alphabet이 변하였다면 증가시켜 주는 변수. 하지만, 같은 알파벳이 등장하면 증가 시키지 않는다.
-//				step++; //alphabet을 증가 시켜 A~Z까지 몇번 등장하는지 확인하기 위한 변수
+//				Answer++; // hash이 변하였다면 증가시켜 주는 변수. 하지만, 같은 알파벳이 등장하면 증가 시키지 않는다.
+//				step++; //hash을 증가 시켜 A~Z까지 몇번 등장하는지 확인하기 위한 변수
 //			}
 //			if(i != 0 && (arr[i][0] == arr[i - 1][0])) {
 //				step--;
