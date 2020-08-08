@@ -1,62 +1,78 @@
-#include <cstdio>
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//int recur(string s)
+//{
+//    if (s.size() == 2)
+//    {
+//        if (s[0] == '0')
+//            return 0;
+//        else if (s[1] == '0') {
+//            if (stoi(s) > 40)
+//                return 0;
+//            else
+//                return 1;
+//        }
+//        else
+//            return 2;
+//    }
+//    if (s.size() == 1)
+//    {
+//        if (s[0] == '0')
+//            return 0;
+//        else
+//            return 1;
+//    }
+//
+//
+//    if (stoi(s.substr(0, 2)) > 40 && s[1] != '0') //경우의 수를 못 나는 경우 -> 0번째 숫자 무시
+//    {
+//        return recur(s.substr(1, s.size()));
+//    }
+//    else if (s[1] == '0') //두번째 자리가 0이면 못나눈다
+//    {
+//        return recur(s.substr(2, s.size()));
+//    }
+//    else
+//    {
+//        return recur(s.substr(1, s.size())) + recur(s.substr(2, s.size()));
+//    }
+//}
+//
+//int main() {
+//    string s;
+//    getline(cin, s);
+//
+//    cout << recur(s);
+//    return 0;
+//}
+
+#include <iostream>
 #include <cstring>
-#include <queue>
 #include <algorithm>
 using namespace std;
 
-//#define MAX(i, j) ( ((i) > (j)) ? (i) : (j) )
-//#define MAX(a, b) (((a) > (b)) ? (a) : (b))
-
-int n, m;
-char map[51][51];
-bool visited[51][51];
-
-const int dx[] = { -1, 0, 1, 0 }, dy[] = { 0, 1, 0, -1 };
-
-struct INFO
+int main()
 {
-    int y, x, d;
-};
+	char n[45];
+	int num[45] = { 0 };
+	int dp[45] = { 0 };
+	cin >> n;
+	for (int i = 0; i < strlen(n); i++) {
+		num[i] = n[i] - '0';
+	}
 
-int bfs(int i, int j) //y, x
-{
-    int dist = 0;
-    queue<INFO> q;
-    q.push({ i, j, 0 });
-    visited[i][j] = true;
-    while (!q.empty())
-    {
-        int x = q.front().x, y = q.front().y, d = q.front().d;
-        q.pop();
-        for (int k = 0; k < 4; k++) {
-            int nx = x + dx[k], ny = y + dy[k];
-            if (nx < 0 || nx >= m || ny < 0 || ny >= n) continue;
-            if (visited[ny][nx] || map[ny][nx] == 'W') continue;
+	dp[0] = 1;
+	for (int i = 0; i < strlen(n); i++) {
+		if (num[i] != 0) {
+			dp[i + 1] += dp[i];
+			if (10 <= num[i] * 10 + num[i + 1] && num[i] * 10 + num[i + 1] <= 34) {
+				dp[i + 2] += dp[i];
+			}
+		}
+	}
 
-            q.push({ ny, nx, d + 1 });
-            visited[ny][nx] = true;
-            dist = max(dist, d + 1);
-        }
-    }
-    return dist;
-}
+	cout << dp[strlen(n)];
 
-int main() {
-    scanf("%d %d", &n, &m);
-    for (int i = 0; i < n; i++) {
-        scanf("%s", map[i]);
-    }
-
-    int ans = 0;
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < m; j++) {
-            if (map[i][j] == 'L')
-            {
-                memset(visited, false, sizeof(visited));
-                ans = max(ans, bfs(i, j));
-            }
-        }
-    }
-    printf("%d ", ans);
-    return 0;
 }
