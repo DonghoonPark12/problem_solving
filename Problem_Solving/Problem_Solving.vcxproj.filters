@@ -240,6 +240,27 @@
     <ClCompile Include="BOJ\2591.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="BOJ\2565.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\2578.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\1799.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="정렬(Sort)\sort.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\2570.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="프로그래머스 고득점 Kit\조이스틱.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="프로그래머스 고득점 Kit\Joystick.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DistanceEstimator.h">
@@ -250,10 +271,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Image Struct &amp; Allocation, Load" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="SystemSW(2)_Lecture_Summary.txt" />
     <Text Include="DP\DP.txt" />
   </ItemGroup>
 </Project>

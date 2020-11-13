@@ -31,6 +31,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Win32", "Win32\Win32.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TCPIP", "TCPIP\TCPIP.vcxproj", "{1AB2FA0B-3C0E-4FA9-AA00-0D00CAF5B0C4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CAPL", "CAPL\CAPL.vcxproj", "{0B35E266-FA7A-4778-A16A-669729258763}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -233,6 +235,20 @@ Global
 		{1AB2FA0B-3C0E-4FA9-AA00-0D00CAF5B0C4}.Release|x64.Build.0 = Release|x64
 		{1AB2FA0B-3C0E-4FA9-AA00-0D00CAF5B0C4}.Release|x86.ActiveCfg = Release|Win32
 		{1AB2FA0B-3C0E-4FA9-AA00-0D00CAF5B0C4}.Release|x86.Build.0 = Release|Win32
+		{0B35E266-FA7A-4778-A16A-669729258763}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{0B35E266-FA7A-4778-A16A-669729258763}.Debug|ARM.ActiveCfg = Debug|Win32
+		{0B35E266-FA7A-4778-A16A-669729258763}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{0B35E266-FA7A-4778-A16A-669729258763}.Debug|x64.ActiveCfg = Debug|x64
+		{0B35E266-FA7A-4778-A16A-669729258763}.Debug|x64.Build.0 = Debug|x64
+		{0B35E266-FA7A-4778-A16A-669729258763}.Debug|x86.ActiveCfg = Debug|Win32
+		{0B35E266-FA7A-4778-A16A-669729258763}.Debug|x86.Build.0 = Debug|Win32
+		{0B35E266-FA7A-4778-A16A-669729258763}.Release|Any CPU.ActiveCfg = Release|Win32
+		{0B35E266-FA7A-4778-A16A-669729258763}.Release|ARM.ActiveCfg = Release|Win32
+		{0B35E266-FA7A-4778-A16A-669729258763}.Release|ARM64.ActiveCfg = Release|Win32
+		{0B35E266-FA7A-4778-A16A-669729258763}.Release|x64.ActiveCfg = Release|x64
+		{0B35E266-FA7A-4778-A16A-669729258763}.Release|x64.Build.0 = Release|x64
+		{0B35E266-FA7A-4778-A16A-669729258763}.Release|x86.ActiveCfg = Release|Win32
+		{0B35E266-FA7A-4778-A16A-669729258763}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
